@@ -1,80 +1,25 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {WrappedMap}  from './components/Map';
-import { image } from './restaurant.jpg'
+import { Dashboard } from './containers/Dashboard';
+import { Place } from './containers/Place-details';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Header } from './components/Header';
+import { FiltersContainer } from './containers/Filters-container';
+
 
 const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
 
-function Header () {
-  return (
-          <div>
-      <h1>Shades of Green</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/filters/">filters</Link>
-          </li>
-          <li>
-            <Link to="/place/">place</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-}
-
-const Dashboard = () => {
-  return (
-    <div className="dashboard">
-      <h1>Dashboard</h1>
-      <input type="text" placeholder="Near me..."></input>
-      <h3>Filters</h3>
-      <button>Filter by score</button>
-      <button>Filter by type</button>
-      <button>Filter by radius</button>
-      <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok&v=3.exp&libraries=geometry,drawing,places`}
-        loadingElement={<div style={{ height: `80%` }} />}
-        containerElement={<div style={{ height: `400px` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
-    </div>
-  )
-}
-
-const Filters = () => {
-  return <h1>Filters</h1>
-}
-
-const Place = () => {
-  return (
-    <div>
-      <h1>Place</h1>;
-      <img src={image} alt="Image"/>;
-    </div>
-  )
-}
-
-
-
 function App () {
   return (
-    // <div className="App" style={{ height: `100vh`, width: `80vw` }}>
     <Router>
       <div>
         <Header />
-
         <Route path="/" exact component={Dashboard} />
-        <Route path="/filters/" component={Filters} />
+        <Route path="/filters/" component={FiltersContainer} />
         <Route path="/place/" component={Place} />
       </div>
     </Router>
-    // </div>
-  );
+  )
 }
 
 export default App;
