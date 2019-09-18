@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { WrappedMap } from './components/Map';
+import {WrappedMap}  from './components/Map';
+import { image } from './restaurant.jpg'
+
 const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
 
 function Header () {
   return (
-    <div>
+          <div>
       <h1>Shades of Green</h1>
       <nav>
         <ul>
@@ -34,12 +36,12 @@ const Dashboard = () => {
       <button>Filter by score</button>
       <button>Filter by type</button>
       <button>Filter by radius</button>
-      {/* <WrappedMap
+      <WrappedMap
         googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok&v=3.exp&libraries=geometry,drawing,places`}
         loadingElement={<div style={{ height: `80%` }} />}
         containerElement={<div style={{ height: `400px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
-      /> */}
+      />
     </div>
   )
 }
@@ -49,7 +51,12 @@ const Filters = () => {
 }
 
 const Place = () => {
-  return <h1>Place</h1>
+  return (
+    <div>
+      <h1>Place</h1>;
+      <img src={image} alt="Image"/>;
+    </div>
+  )
 }
 
 
@@ -66,8 +73,6 @@ function App () {
         <Route path="/place/" component={Place} />
       </div>
     </Router>
-    // <p>Shades Of Green</p>
-    // <p>Search bar</p>
     // </div>
   );
 }

@@ -11,8 +11,4 @@ const Map = (props) => {
   }
   
 // the 
-const WrappedMap = (props) => {
-  return withScriptjs(withGoogleMap(Map));
-} 
-
-export default WrappedMap;
+export const WrappedMap = withScriptjs(withGoogleMap(Map));
