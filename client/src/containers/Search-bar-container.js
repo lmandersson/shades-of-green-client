@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SearchBar } from '../components/Search-bar';
 
+
 export const SearchBarContainer = () => {
-  return <SearchBar />
+  
+  const [searchedPlace, setSearchedPlace] = useState(null);
+
+  return (
+    <SearchBar
+      setSearchedPlace={setSearchedPlace}
+    />)
 }
