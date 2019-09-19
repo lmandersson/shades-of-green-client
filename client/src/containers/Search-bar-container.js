@@ -16,7 +16,6 @@ export const SearchBar = (props) => {
     const latlng = await getLatLng(results[0]);
     setSearchedPlace(value);
     props.setLocation(latlng);
-    
   };
 
   return (

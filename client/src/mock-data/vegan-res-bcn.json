@@ -1,0 +1,1026 @@
+{
+  "html_attributions": [],
+  "next_page_token": "CrQCJwEAABVWtQamy5SIU2dH0XxTGjwjyBM2HsdhVjzb9hkVGm_O1-ZNQazdO7oVpEwewww1oe5iKYSqK5M-xUorE4rLXXTPtTldy5E8ij1asIP90O-bVuWDxehpzpo2Z5-rMTLI_S6ocuQv-hfrbwOm9HvWuyWDLzyntHCbyxJkzCwwtUh4r2L23sVAkb_kvHOvn4B6zgwQF4GnUMZLafniRMjS7n569uBLeBNIxE2N177XxJGJUEUzPqL3aj7LYcjUvNrv79JPRLOVtmBrKBEsvFxaccD-fXgRwnQvnDLdioijns9nFxpb3HbEdKi7M6YN_uSWV6axC5wExRLGbFwwcvJcreJ8vT3vDW3RJfJi5QlF_8JijM0yDt-Qo6jy1Ih7WD0-cPYl_kWX9p-CEVz-JzX1MycSEMnd_NMqie2ugGNH1-bzy-saFDwSIl0SnTo4PVcsa3KZkbAKoV3P",
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3822847,
+          "lng": 2.1680701
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38365772989272,
+            "lng": 2.169464079892722
+          },
+          "southwest": {
+            "lat": 41.38095807010728,
+            "lng": 2.166764420107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "8856c5cbc3651145e69ebada760d6012aa4e8074",
+      "name": "Veggie Garden",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 804,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116782584345953656828/photos\">A Google User</a>"
+          ],
+          "photo_reference": "CmRaAAAAXYGokxZpjivvw2fo4jtHc66XGyxTFSG52s28g3PtF7hpemHlgaa0FjjbzGivmiCMC_DjZ34XlFuVIkLlcJObNGhNOZIk14CID-7hrG3yzmxzqjdl_1eeCcGFrmCkcf96EhBISPFo0GaxXv7zr92xgG3vGhQRtU4eOdpuHuMUGvA4i0iORlQ2hg",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJIWqhvvWipBIRW1P3GkAEauk",
+      "plus_code": {
+        "compound_code": "95J9+W6 Barcelona",
+        "global_code": "8FH495J9+W6"
+      },
+      "price_level": 1,
+      "rating": 4.2,
+      "reference": "ChIJIWqhvvWipBIRW1P3GkAEauk",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1800,
+      "vicinity": "Carrer dels Àngels, 3, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3867057,
+          "lng": 2.1653055
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38811517989271,
+            "lng": 2.166575679892722
+          },
+          "southwest": {
+            "lat": 41.38541552010727,
+            "lng": 2.163876020107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "011635e5595d6ac12c7b1019ab83666446959f04",
+      "name": "Veggie Garden",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100819170990937750269/photos\">Osnat Peretz</a>"
+          ],
+          "photo_reference": "CmRaAAAANsSwU4ZLGqMlsFGBRaIqso5xOqtMQPTKOnAVzpYhy39URdaVivDbSiZo3VPrsKny_gzeqNeAq7aCvyFHlsVDBnsIVjPaa0wnAfDKCPlPd7LMvrlikDTlMkeZifMJfPviEhAhzVHTe4-I3VpxcOBnrlB7GhQbJZv9S1d47RVOXAmaUPnf2P4Flw",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJF2b3TvOipBIRc99FvSaI6jI",
+      "plus_code": {
+        "compound_code": "95P8+M4 Barcelona",
+        "global_code": "8FH495P8+M4"
+      },
+      "price_level": 1,
+      "rating": 4.3,
+      "reference": "ChIJF2b3TvOipBIRc99FvSaI6jI",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1568,
+      "vicinity": "Gran Via de les Corts Catalanes, 602, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3897924,
+          "lng": 2.1576614
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39110607989273,
+            "lng": 2.158961929892723
+          },
+          "southwest": {
+            "lat": 41.38840642010728,
+            "lng": 2.156262270107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "c7c9eb63c71dcc2eafc5c40f897a2988629d91ac",
+      "name": "Floripa",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115196215334099887464/photos\">A Google User</a>"
+          ],
+          "photo_reference": "CmRaAAAA-EvuHNpwWEUEuqrN8cZOmv_HGcxEZBSu0N7ApJ6s_VJZ8XeGS71IqVlFvVYBEiCb4gWfq4gLoLVODBLfFkox89nROUDwJ0xGShC9R08PFdRZ9oPvRBfIQM_2acuSBWc3EhCBQZwEq_zvRn4UIzjATjBGGhQVTlriKmgZbivGE72NgLd-Ec_iiw",
+          "width": 1960
+        }
+      ],
+      "place_id": "ChIJGbPjSY6ipBIRdxi6MKUtDZc",
+      "plus_code": {
+        "compound_code": "95Q5+W3 Barcelona",
+        "global_code": "8FH495Q5+W3"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJGbPjSY6ipBIRdxi6MKUtDZc",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 367,
+      "vicinity": "Carrer d'Aribau, 92, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.388327,
+          "lng": 2.151382
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38968452989272,
+            "lng": 2.152742329892722
+          },
+          "southwest": {
+            "lat": 41.38698487010728,
+            "lng": 2.150042670107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "109c3924d2a8d7efdccc60612b32da4455407a56",
+      "name": "2Y Restaurante Macrobiótico",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 533,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114228134904512706148/photos\">Blai Estivill Bancells</a>"
+          ],
+          "photo_reference": "CmRaAAAAJtKRKcspJ5RMxQX2bMuvwyRunbWEbejTn07RWabHytKhEgVfj8dQwaq0J_JYIxh1Pmzl1qYwnkwNFh6b0b66kzfBWy2z660G2HkKxvNCYJ3WHyjPHvESp5QZaYPPsN18EhAINbFw6FysazKbqaMyzK6BGhRSSlnDGOLrKBLCF6OB5TH3yE9nZw",
+          "width": 800
+        }
+      ],
+      "place_id": "ChIJl9KrXYSipBIRn3_3bjjeP3Q",
+      "plus_code": {
+        "compound_code": "95Q2+8H Barcelona",
+        "global_code": "8FH495Q2+8H"
+      },
+      "price_level": 1,
+      "rating": 4.6,
+      "reference": "ChIJl9KrXYSipBIRn3_3bjjeP3Q",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 269,
+      "vicinity": "Passatge de Batlló, 4, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3812207,
+          "lng": 2.1668705
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38254867989272,
+            "lng": 2.168280729892722
+          },
+          "southwest": {
+            "lat": 41.37984902010728,
+            "lng": 2.165581070107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "6e33645ba216e160e510a5b77c205faf71d5bb0d",
+      "name": "Vegetalia Raval",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1333,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101751201439399084016/photos\">Restaurante Vegetariano Vegetalia</a>"
+          ],
+          "photo_reference": "CmRaAAAARjPmt5GwzDg1t2D7B2Ore6cWLyBlAS6vqKJkD09PSy8ZSq2Aop4kz7NO4_zWfa6-mB2cj1WMlyOmbtF2kwLLNzrbg71hJSUvFdVuhLXoZDm9v9fIWnxg7snUyvFAANClEhC476weCgbcj26jVfl7qcvsGhR9ITwqKbqYlGgkuQMBQdmoJHrzcw",
+          "width": 2000
+        }
+      ],
+      "place_id": "ChIJYQN6efWipBIRX1l4PEdELKA",
+      "plus_code": {
+        "compound_code": "95J8+FP Barcelona",
+        "global_code": "8FH495J8+FP"
+      },
+      "price_level": 2,
+      "rating": 4.1,
+      "reference": "ChIJYQN6efWipBIRX1l4PEdELKA",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 787,
+      "vicinity": "Plaça d'Emili Vendrell, 1, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3851321,
+          "lng": 2.1680585
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38648272989272,
+            "lng": 2.169347279892722
+          },
+          "southwest": {
+            "lat": 41.38378307010727,
+            "lng": 2.166647620107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "1cc35df7cc50e2f0e02f19d77c59ea794c1ad768",
+      "name": "Teresa Carles",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115568329177919347039/photos\">Judith Chacon</a>"
+          ],
+          "photo_reference": "CmRaAAAAGw0x3zdDY6sDnzm9wsPw8Mrmq6oUW4uAdmvxnPGxfovrshYA9UurhxfsdKaqWPnoNgX0-nlT4DqwvMb4oj9D5qzqYCVSepsWbm-G0_wKDRCgXHZcSUhhwzzoEf5sN_fkEhALEdqU04Y_EQrn_Mz5gGjUGhQ77aaKrhS7FVNxIh89AygzSXC7pg",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJH1MVbvSipBIRl_BB017gBB4",
+      "plus_code": {
+        "compound_code": "95P9+36 Barcelona",
+        "global_code": "8FH495P9+36"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJH1MVbvSipBIRl_BB017gBB4",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 3666,
+      "vicinity": "Carrer de Jovellanos, 2, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3813147,
+          "lng": 2.1780947
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38261362989272,
+            "lng": 2.179401729892722
+          },
+          "southwest": {
+            "lat": 41.37991397010727,
+            "lng": 2.176702070107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "687712559417c5444e9c4f45c168af84a94b88b4",
+      "name": "Rasoterra",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106445812637062004900/photos\">Montserrat Corbera</a>"
+          ],
+          "photo_reference": "CmRaAAAAh6lcGgB0mOUOzX3hQEhr79xx7rlxdwB6TT5OgqVsY8ClfJF_j_c9Ae584j3GL4oRwxTGtfvDwlfELap2LdVRV1tz52R-4PVgfUkZcS6F47OoHS3EQe64GC_oNWkSyvBdEhCp5IbqHnqJ4fo50p27Tpk3GhTFM41d5mgrAYFtc67nRlZqGb6M4w",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJ_-VtmPiipBIR55enlljB32Q",
+      "plus_code": {
+        "compound_code": "95JH+G6 Barcelona",
+        "global_code": "8FH495JH+G6"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJ_-VtmPiipBIR55enlljB32Q",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 737,
+      "vicinity": "Carrer del Palau, 5, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.40735660000001,
+          "lng": 2.1637064
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.40870837989272,
+            "lng": 2.165059579892723
+          },
+          "southwest": {
+            "lat": 41.40600872010728,
+            "lng": 2.162359920107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "853964fda24aca9e28ec0efc718d54cc62db2db5",
+      "name": "Dolce Pizza y Los Veganos",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114237177597584934516/photos\">Edgar Kidulis</a>"
+          ],
+          "photo_reference": "CmRaAAAAGd7td3dPZ3CcwkIIm3_NOXXwgGdDYS_uN_DZUyE436DmeP8BRUN1OlceqSLULlBy7YcefpQt_BRYntiiZRTwjUcA5xFsX34MG7owgTiJTbQMSvNbHTb4odfKUYRL8PD7EhCayhr6tpZfMougCRK4y9CJGhTk15r7kNpRCRwMH24yK45oePZnew",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJl4QyVcWipBIRA858W2tUH5I",
+      "plus_code": {
+        "compound_code": "C547+WF Barcelona",
+        "global_code": "8FH4C547+WF"
+      },
+      "rating": 4.5,
+      "reference": "ChIJl4QyVcWipBIRA858W2tUH5I",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 993,
+      "vicinity": "Carrer d'Hipòlit Lázaro, 34, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3825075,
+          "lng": 2.1693781
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38391387989272,
+            "lng": 2.170663879892722
+          },
+          "southwest": {
+            "lat": 41.38121422010727,
+            "lng": 2.167964220107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "21f9c6c5381b639f4f35a2592fc50cb82695cabd",
+      "name": "Biocenter",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111130740715566831634/photos\">Mark DB</a>"
+          ],
+          "photo_reference": "CmRaAAAAFEWm9tLsE211kWCRXxkbRoFDGs1Bp-lqwVdrSngo06uDFrV4CD99lDlzetTs-fTy0L1Iecdr8gIS9iitPUHOQyF3XdvkZjv2aLsNZlcXHpyNt2P6I2JiOWa71BKFzDkREhC0QgC-hFrxizJeYDb2MvW1GhTokBYVpulnDW7CgCas4LpOQwjS9A",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJqVSN2fWipBIRQZz3GV1AauI",
+      "plus_code": {
+        "compound_code": "95M9+2Q Barcelona",
+        "global_code": "8FH495M9+2Q"
+      },
+      "rating": 4.4,
+      "reference": "ChIJqVSN2fWipBIRQZz3GV1AauI",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1207,
+      "vicinity": "Carrer del Pintor Fortuny, 25, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.4050134,
+          "lng": 2.1735842
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.40638892989272,
+            "lng": 2.174967729892722
+          },
+          "southwest": {
+            "lat": 41.40368927010728,
+            "lng": 2.172268070107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "6dabcdda9e6e4861ad45da185705f5b20b88b777",
+      "name": "La Trocadero",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1385,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103624874238229499858/photos\">La Trocadero</a>"
+          ],
+          "photo_reference": "CmRaAAAA4cbIITBO9NeEFEM9KDLA6ceCFNmXmCXR7et9XxS5HNtUMQ3rgP_afSxA-xdLXAqcZlluQoZGJ-1HqTSCtZ2WAq7C21gRCsd8H1Kgpk5gdbCZjqLKmIvimziCMRZuo5GzEhB-eo5peBX-BVPEsYNhE65sGhSuF_hI4F7i0LfN9EgCgArGBOzuhA",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJFyeCRMOipBIR5-Pzg0mWoRs",
+      "plus_code": {
+        "compound_code": "C54F+2C Barcelona",
+        "global_code": "8FH4C54F+2C"
+      },
+      "price_level": 1,
+      "rating": 4.6,
+      "reference": "ChIJFyeCRMOipBIR5-Pzg0mWoRs",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1395,
+      "vicinity": "Carrer de la Marina, 269, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.397438,
+          "lng": 2.1569414
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39874987989272,
+            "lng": 2.158335129892722
+          },
+          "southwest": {
+            "lat": 41.39605022010728,
+            "lng": 2.155635470107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "af26a646f8b2e6e67e07224c2e80d6bf15751e25",
+      "name": "Väcka",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108570800718452990478/photos\">Kar Armas</a>"
+          ],
+          "photo_reference": "CmRaAAAAmQE5sPE-u3Lm4RVNdIhDsuivyMApBjSrScoqZpvfH5bCQFt7QHl7w7bWLzqMfxRY1FI1bRG2npqDG2mPqosKmXNy_zIdXzXgA6ct46qCksPP2gP4kBq2f-54dczDA333EhCnR1K-rCFlZ9PcPzN_jQTtGhSB-34f215zsQ-EYEa2N1PeLPbVZQ",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJ8d9-IpeipBIRK7ou3Vv7VrQ",
+      "plus_code": {
+        "compound_code": "95W4+XQ Barcelona",
+        "global_code": "8FH495W4+XQ"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJ8d9-IpeipBIRK7ou3Vv7VrQ",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_delivery",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 489,
+      "vicinity": "Carrer de Sèneca, 4, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3768286,
+          "lng": 2.1430087
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.37818777989271,
+            "lng": 2.144350429892723
+          },
+          "southwest": {
+            "lat": 41.37548812010727,
+            "lng": 2.141650770107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "485beaeec2cea7b16ec881dff739cbdaeed0ca33",
+      "name": "Bio Bento",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2322,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114545133781376076859/photos\">BioBento</a>"
+          ],
+          "photo_reference": "CmRZAAAAN48InHvXZgdVnLhRmq22F3fcAsHjIH9v91Bxm03rrCZeo5cUitTPeeJyKBpqdb55LPjc7rnwNxAlzJHql2hxy7RpNkdLHm_LgWLVXwT3ckGfjbBSy6h7oNJ-Xn4Fxtq8EhAByn2fvALIgAMkZb2WdcIAGhRRo2YRr6J5V5ujO7sGbbl8RjE_MQ",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJI3W-hIGYpBIRr4EIPH6t1Go",
+      "plus_code": {
+        "compound_code": "94GV+P6 Barcelona",
+        "global_code": "8FH494GV+P6"
+      },
+      "rating": 4.6,
+      "reference": "ChIJI3W-hIGYpBIRr4EIPH6t1Go",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 146,
+      "vicinity": "Carrer d'Ermengarda, 34, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.38182,
+          "lng": 2.1838673
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38322812989271,
+            "lng": 2.185095229892723
+          },
+          "southwest": {
+            "lat": 41.38052847010727,
+            "lng": 2.182395570107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "9076cde9a17ac6cbff5975380be0fa060bf243cd",
+      "name": "The Green Spot",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113125571954789289073/photos\">Traveler&#39;s Q</a>"
+          ],
+          "photo_reference": "CmRaAAAAr3lMd6sor9BqP-J6F0OjuIDg9Cb3rItThA6dRRiOKcZFx8ZYDQSjlAbduzK4Cw9314dBfEPvg5twC8XzFhy2yUAfaculkPoEbr-V8ihG_fUWVk6DT0-_ideILSnkXJ7BEhBLFTfqz7SwIpNWhslyauvFGhShX8rpIe2hn2Ty0_4JLw1SCjeXqA",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJ50XXwv-ipBIR3uDaaAWVrAo",
+      "plus_code": {
+        "compound_code": "95JM+PG Barcelona",
+        "global_code": "8FH495JM+PG"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJ50XXwv-ipBIR3uDaaAWVrAo",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1199,
+      "vicinity": "Carrer de la Reina Cristina, 12, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.4028476,
+          "lng": 2.1564758
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.40418677989272,
+            "lng": 2.157808329892722
+          },
+          "southwest": {
+            "lat": 41.40148712010728,
+            "lng": 2.155108670107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "c9f82c1fc7b821d0073d0216cea9ebb9e0d01083",
+      "name": "VegetArt Cuina Vegana",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3870,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110114217199327072346/photos\">VegetArt Cuina Vegana</a>"
+          ],
+          "photo_reference": "CmRaAAAAGX7QchwrI_BM6Jc9m6vF3hftHesSLbUn4oa6z-YDaSZN193TWcEyVXewup9H9Qgq2ifqAdmPJgER0UE09lZ4W0VUs9gnlasmcOTn6v5qhvmsLmjTfOjYRwk4hfcyHQm2EhAgzxsXNV2unDBwwD8044F9GhQQykcTh4KGiehrqSg6u7gviAcZeg",
+          "width": 3096
+        }
+      ],
+      "place_id": "ChIJXyPQEL2ipBIR4TrktBsjC_8",
+      "plus_code": {
+        "compound_code": "C534+4H Barcelona",
+        "global_code": "8FH4C534+4H"
+      },
+      "price_level": 1,
+      "rating": 4.7,
+      "reference": "ChIJXyPQEL2ipBIR4TrktBsjC_8",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 195,
+      "vicinity": "Carrer del Torrent de l'Olla, 138, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3804177,
+          "lng": 2.1776922
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38178202989272,
+            "lng": 2.179033379892722
+          },
+          "southwest": {
+            "lat": 41.37908237010727,
+            "lng": 2.176333720107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "6cc463347746ad9d1f0bf32471698fbbf96de177",
+      "name": "Vegetalia Gotico",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 582,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115767386350445145071/photos\">VEGETALIA RESTAURANTE</a>"
+          ],
+          "photo_reference": "CmRaAAAAQW4VK5Zo9l1c9bDeC3DKfY1anO0o6z39zHbltj33wlp6VZjaTIpHeRARe8d4NOIEY1WMXSbhLj9dOLN1cBm_PA_cPLzI0KYJcWLvkpQeTwW1D2SyBtpgt36Sxf8wodb5EhC8_J6DL3_hS4Spdc0iLoSrGhQCY3hi_h17sY07xtHqY2SLK0Ursw",
+          "width": 960
+        }
+      ],
+      "place_id": "ChIJUelNJlaipBIRwdR_rTZgsDI",
+      "plus_code": {
+        "compound_code": "95JH+53 Barcelona",
+        "global_code": "8FH495JH+53"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJUelNJlaipBIRwdR_rTZgsDI",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1147,
+      "vicinity": "Carrer dels Escudellers, 54, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3835421,
+          "lng": 2.1825799
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38493132989272,
+            "lng": 2.184004529892722
+          },
+          "southwest": {
+            "lat": 41.38223167010727,
+            "lng": 2.181304870107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "9aac36f5568371d2bb0563a77b5406e291d744bd",
+      "name": "Vegetalia Born",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3672,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114118451392288609524/photos\">Pako Valera</a>"
+          ],
+          "photo_reference": "CmRaAAAA-NvftAgLUycgMg_nu42cTQo5D8ftQ894LgiMlidS2TjQ4yEFHVta6tG_LGS4NOaPeMJE2Z92vBFwyGVMnwLR1EWFJjP_30hrytGxuywlp3PsNftEIUsiDBia-9xMmsOEEhAtczPArvhCGBkzAc7Zee7DGhQkiAM9kJB645D7r40rbZ6QLc6i4Q",
+          "width": 4896
+        }
+      ],
+      "place_id": "ChIJeWhgRf6ipBIRgu6m5FhwqCg",
+      "plus_code": {
+        "compound_code": "95MM+C2 Barcelona",
+        "global_code": "8FH495MM+C2"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJeWhgRf6ipBIRgu6m5FhwqCg",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 892,
+      "vicinity": "Plaça del Fossar de les Moreres, s/n, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3844065,
+          "lng": 2.1625537
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38572267989272,
+            "lng": 2.163856079892722
+          },
+          "southwest": {
+            "lat": 41.38302302010728,
+            "lng": 2.161156420107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "2bf35fc052b651d48865ea8c964acc377ad4a2d9",
+      "name": "Restaurant Macrobiòtic Zen",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112660332518964471184/photos\">Restaurant Macrobiòtic Zen</a>"
+          ],
+          "photo_reference": "CmRaAAAANgagsjOG7tcUS6SloNEall7BHwz4MDq6zfyRVbxKLoKSqXdhD0Ew7z20lXUFqUCETJp26ckaDf7dHP_RaQkCTsP4x-0SwawTE19_lRixnh8gVqscZCwzXRDRKAv4dXZ0EhBHpGOkS5j1zDi3c0jtPEO8GhRy7MPfkJf74oE0-1vvObiXi6d9iw",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJz9EhDIuipBIRJKo7CFC0NAA",
+      "plus_code": {
+        "compound_code": "95M7+Q2 Barcelona",
+        "global_code": "8FH495M7+Q2"
+      },
+      "price_level": 1,
+      "rating": 4.6,
+      "reference": "ChIJz9EhDIuipBIRJKo7CFC0NAA",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 303,
+      "vicinity": "Carrer de Muntaner, 12, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3824417,
+          "lng": 2.1287673
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38388517989272,
+            "lng": 2.130005329892722
+          },
+          "southwest": {
+            "lat": 41.38118552010728,
+            "lng": 2.127305670107277
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "144191b06e7531a907db62cc070b2fc4877f505c",
+      "name": "Alive Restaurant - Vegà",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2240,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100650598390369643063/photos\">Jonathan Marriott</a>"
+          ],
+          "photo_reference": "CmRaAAAAOvEVEYHRiB-06KeWnnPgfQw5GOvEzWG1pfCrs4Upvd0f8bICu_06zQ8P78opkvBhOyMov9xvChOQubi6PXJEg9nQCy5EmHOMIo6jBY1fL8NqoHcu1EdFvCw0amb7CiypEhDfvnNhKff5fJ1siNmHORjqGhQfGX6pZILsScN6qizjnhdyv8NBow",
+          "width": 3968
+        }
+      ],
+      "place_id": "ChIJ__9P6mGYpBIRkwS56GwZyPo",
+      "plus_code": {
+        "compound_code": "94JH+XG Barcelona",
+        "global_code": "8FH494JH+XG"
+      },
+      "rating": 4.4,
+      "reference": "ChIJ__9P6mGYpBIRkwS56GwZyPo",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 457,
+      "vicinity": "Travessera de les Corts, 180, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.4045206,
+          "lng": 2.1607477
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.40592532989272,
+            "lng": 2.162037029892723
+          },
+          "southwest": {
+            "lat": 41.40322567010728,
+            "lng": 2.159337370107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "dac570ba973c460b3efb9a679a5e20aa4ad7b1ce",
+      "name": "Veg World India",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106028361184936816729/photos\">yeshvant jain</a>"
+          ],
+          "photo_reference": "CmRaAAAA3gI8d_qLfsVQTbvFJdg1Wo9Ax0m4EjLE4ccUpoIjCzLwIZhZupJoqsCeuS_lvrt46E8iBj1K9ZaSmyW4ElBFxG-E8kMejTQGimDEXjbsmB2ZgHKQvwDahNMiY39D2yZLEhB0M1ADeqnyn1xmt2cdsLhxGhQb6DoVvw8gWBJvJMLKkTFOHspweQ",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJu0J4lr6ipBIRevA8AWU8Mb4",
+      "plus_code": {
+        "compound_code": "C536+R7 Barcelona",
+        "global_code": "8FH4C536+R7"
+      },
+      "price_level": 1,
+      "rating": 4.5,
+      "reference": "ChIJu0J4lr6ipBIRevA8AWU8Mb4",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1080,
+      "vicinity": "Carrer de Bruniquer, 24, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3823119,
+          "lng": 2.1685987
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38363437989272,
+            "lng": 2.169978029892722
+          },
+          "southwest": {
+            "lat": 41.38093472010727,
+            "lng": 2.167278370107278
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "56e03543678dbe77860aa26d2cacb1bea08111ec",
+      "name": "Restaurant l'Hortet",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2015,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108017747236280841401/photos\">Joan Soler Martí</a>"
+          ],
+          "photo_reference": "CmRaAAAAJD3fpYCjneqkUdejyk8tweOc2XxQE00LRqarbJyBnjBb7HzlxlmQS6J9qKHuLJi0WaPQ6aCmJDSpLmhNhFcckUUWp5qtBMvyLlsVwsGRAtXTNyA4rsVB8-zyIy8ytq1lEhDDmD1N8RBzT4HLRKP_SLHoGhQowLqQsgcY79WWCKpCPqWtFEXh2A",
+          "width": 4031
+        }
+      ],
+      "place_id": "ChIJNweNw_WipBIRqzXoEv9Iblg",
+      "plus_code": {
+        "compound_code": "95J9+WC Barcelona",
+        "global_code": "8FH495J9+WC"
+      },
+      "price_level": 1,
+      "rating": 4.5,
+      "reference": "ChIJNweNw_WipBIRqzXoEv9Iblg",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 611,
+      "vicinity": "Carrer del Pintor Fortuny, 32, Barcelona"
+    }
+  ],
+  "status": "OK"
+}
