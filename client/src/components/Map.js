@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps";
+// TODO: should be replace with the api call 
 import { places } from '../mock-data.json';
 
 const Map = (props) => {
   
   // const [selectedPlace, setSelectedPlace] = useState(null); -> // moved to Dashboard 
-
+  console.log('IN MAP', props.currentLocation);
+  
   return (
     <GoogleMap
       defaultCenter={props.currentLocation}
+      center={props.currentLocation}
       defaultZoom={10}
+      zoom={10}
     >
       {places.map(place => { // TODO: change to props.places.map()
-        console.log(place)
+        // console.log(place)
         return ( // returning a marker for each place in the db
         <Marker
           key={place.properties.PLACE_ID}

@@ -1,21 +1,54 @@
 import React from 'react';
-import { GoogleComponent } from 'react-google-location';
+import PlacesAutocomplete, {
+  geocodeByAddress,
+  getLatLng,
+} from 'react-places-autocomplete';
+import { selectPlace } from '../actions';
 
 const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
 
 
 export const SearchBar = (props) => {
 
+  const handleSelect = async (value) => {
+    const results = await geocodeByAddress(value);
+    const latlng = await getLatLng(results[0]);
+    props.setSearchedPlace(value);
+    // props.setCoordinates(latlng);
+    props.setLocation(latlng);
+  };
+
   return (
-    // <input type="text" placeholder="Near me..."></input> // old input
-    <div style={{ height: `10vh`, width: `80vw`}}>
-      <GoogleComponent
-        apiKey={API_KEY}
-        language={'en'}
-        country={'country:in|country:us'}
-        coordinates={true}
-        onChange={(e) => { props.setSearchedPlace(e) }}
-      />
+    <div style={{ height: `10vh`, width: `80vw` }}>
+
+      <PlacesAutocomplete
+        value={props.searchedPlace}
+        onChange={props.setSearchedPlace}
+        onSelect={handleSelect} // when the user selects one option
+      >
+        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+          <div>
+            {/* <p>Lat: {props.coordinates.lat}</p>
+            <p>Lng: {props.coordinates.lng}</p> */}
+
+            <input {...getInputProps({ placeholder: "Type city..." })} />
+            <div>
+              {loading ? <div>Loading...</div> : null}
+              {suggestions.map(suggestion => {
+
+                const style = {
+                  backgroundColor: suggestion.active ? '#41b6e6' : '#ffffff'
+                };
+
+                return (
+                  <div {...getSuggestionItemProps(suggestion, { style })}>
+                    {suggestion.description}
+                  </div>)
+              })}
+            </div>
+          </div>
+        )}
+      </PlacesAutocomplete>
     </div>
   )
 }

@@ -1,21 +1,29 @@
-import React, { useState } from 'react'
-import { connect } from 'react-redux';
+import React, { useState, useEffect } from 'react'
+// import { connect } from 'react-redux'; // -> redux
 
 import { WrappedMap } from '../components/Map';
-import { SearchBarContainer } from './Search-bar-container';
-import { selectPlace } from '../actions';
+import { SearchBar } from './Search-bar-container';
 import { Filters } from '../components/Filters';
+// import { selectPlace } from '../actions'; // -> redux 
+// import Places from '../search.google.service';
+
+//the quary https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.390205,2.154007&radius=2500&type=restaurant&keyword=vegan&key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok
 
 export const Dashboard = () => {
 
   const currentLocation = { // should get from api
-    lat: 41.390205, 
-    lng: 2.154007 
+    lat: 41.390205,
+    lng: 2.154007
   };
 
-  const [selectedPlace, setSelectedPlace] = useState(null);
+  //this should be searchedPlace and 
   const [location, setLocation] = useState(currentLocation);
-  const [places, setPlaces] = useState([])
+
+  // this should be the answer of the api call
+  const [places, setPlaces] = useState([]);
+
+  //if a place has been seleced, should open infoWindow
+  const [selectedPlace, setSelectedPlace] = useState(null);
 
   // filters states 
   const [scoreRangeFilter, setScoreRangeFilter] = useState(null);
@@ -23,10 +31,16 @@ export const Dashboard = () => {
   const [radiusFilter, setRadiusFilter] = useState(null);
 
   // TODO: useEffect for setPlaces when component mount
+  useEffect(() => {
+    console.log('You loaded now');
+  }, [])
 
   return (
     <div className="dashboard">
-      <SearchBarContainer />
+      <SearchBar
+        location={location}
+        setLocation={setLocation}
+      />
       <Filters
         setScoreRangeFilter={setScoreRangeFilter}
         setTypeFilter={setTypeFilter}
@@ -46,15 +60,15 @@ export const Dashboard = () => {
   )
 }
 
+// TODO: Redux
+// const mapStateToProps = (state) => ({
+//   // Map your state to props
+//   id: state.id,
+// });
 
-const mapStateToProps = (state) => ({
-  // Map your state to props
-  id: state.id,
-});
+// const mapDispatchToProps = (dispatch) => ({
+//   // Map your dispatch actions
+//   selectPlace: () => dispatch(selectPlace()),
+// });
 
-const mapDispatchToProps = (dispatch) => ({
-  // Map your dispatch actions
-  selectPlace: () => dispatch(selectPlace()),
-});
-
-export default connect(selectPlace)(Dashboard);
+// export default connect(selectPlace)(Dashboard);
