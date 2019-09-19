@@ -16,7 +16,7 @@ function App () {
       <div>
         <Header />
         <Route path="/" exact component={Dashboard} />
-        <Route path="/filters/" component={FiltersContainer} />
+        {/* <Route path="/filters/" component={FiltersContainer} /> */}
         <Route path="/place/:id" component={Place} />
       </div>
     </Router>

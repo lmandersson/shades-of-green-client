@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import ReactDOM from 'react-dom';
 import StarRatingComponent from 'react-star-rating-component';
 
 export const StarVoting = () => {
@@ -13,7 +12,6 @@ export const StarVoting = () => {
 
   return (
     <div>
-      {/* //TODO: buggy */}
       <h2>Rating from state: {rating}</h2>
       <StarRatingComponent
         name="ratePlace"

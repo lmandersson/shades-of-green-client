@@ -3,15 +3,15 @@ import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "reac
 import { places } from '../mock-data.json';
 
 const Map = (props) => {
-
+  
   // const [selectedPlace, setSelectedPlace] = useState(null); -> // moved to Dashboard 
 
   return (
     <GoogleMap
-      defaultCenter={{ lat: 41.390205, lng: 2.154007 }}
+      defaultCenter={props.currentLocation}
       defaultZoom={10}
     >
-      {places.map(place => {
+      {places.map(place => { // TODO: change to props.places.map()
         console.log(place)
         return ( // returning a marker for each place in the db
         <Marker
