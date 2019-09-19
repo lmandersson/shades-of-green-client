@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps";
 // TODO: should be replace with the api call 
-// import { places } from '../mock-data.json';
 import { results } from '.././mock-data/vegan-res-bcn.json';
+import { Link } from "react-router-dom";
 
-const Map = (props) => {
+const Map = ({ currentLocation, selectedPlace, setSelectedPlace}) => {
 
   // const [selectedPlace, setSelectedPlace] = useState(null); -> // moved to Dashboard 
-  console.log('IN MAP', props.currentLocation);
+  console.log('IN MAP', currentLocation);
 
   return (
     <GoogleMap
-      defaultCenter={props.currentLocation}
-      center={props.currentLocation}
-      defaultZoom={10}
-      // zoom={10}
+      defaultCenter={currentLocation}
+      center={currentLocation}
+      defaultZoom={12}
     >
-      {/* {places.map(place => {  this is the old mock data */}
       {results.map(place => {
-        return ( // returning a marker for each place in the db
+        return ( 
           <Marker
             key={place.place_id}
             position={{
@@ -26,25 +24,27 @@ const Map = (props) => {
               lng: place.geometry.location.lng
             }}
             onClick={() => {
-              props.setSelectedPlace(place);
+              setSelectedPlace(place);
             }}
           />
         )
       })}
 
-      {props.selectedPlace && ( // kind of turnary operator, means if we selected one, do the following  
+      {selectedPlace && ( // kind of turnary operator, means if we selected one, do the following  
         <InfoWindow
           position={{
-            lat: props.selectedPlace.geometry.location.lat,
-            lng: props.selectedPlace.geometry.location.lng
+            lat: selectedPlace.geometry.location.lat,
+            lng: selectedPlace.geometry.location.lng
           }}
           onCloseClick={() => {
-            props.setSelectedPlace(null);
+            setSelectedPlace(null);
           }}
         >
           <div>
-            <h2>{props.selectedPlace.name}</h2>
-            <p>{props.selectedPlace.vicinity}</p>
+            <h2>{selectedPlace.name}</h2>
+            <p>{selectedPlace.vicinity}</p>
+            <img src={selectedPlace.icon}/>
+            <Link to={`/place/${selectedPlace.place_id}`}>go to place</Link>
           </div>
         </InfoWindow>
       )}

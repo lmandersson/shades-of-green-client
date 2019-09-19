@@ -5,13 +5,12 @@ import { WrappedMap } from '../components/Map';
 import { SearchBar } from './Search-bar-container';
 import { Filters } from '../components/Filters';
 // import { selectPlace } from '../actions'; // -> redux 
-// import Places from '../search.google.service';
 
 //the quary https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.390205,2.154007&radius=2500&type=restaurant&keyword=vegan&key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok
 
 export const Dashboard = () => {
 
-  const currentLocation = { // should get from api
+  const currentLocation = { // should get real current location from api
     lat: 41.390205,
     lng: 2.154007
   };
@@ -30,7 +29,7 @@ export const Dashboard = () => {
   const [typeFilter, setTypeFilter] = useState(null);
   const [radiusFilter, setRadiusFilter] = useState(null);
 
-  // TODO: useEffect for setPlaces when component mount
+  // TODO: useEffect for setPlaces when component mount when add api fetch
   useEffect(() => {
     console.log('You loaded now');
   }, [])
@@ -47,7 +46,7 @@ export const Dashboard = () => {
         setRadiusFilter={setRadiusFilter}
       />
       <WrappedMap
-        places={places} // injecting the places to use in map
+        places={places} 
         currentLocation={location}
         googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok&v=3.exp&libraries=geometry,drawing,places`}
         loadingElement={<div style={{ height: `80%` }} />}

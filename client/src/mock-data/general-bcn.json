@@ -1,0 +1,968 @@
+{
+  "html_attributions": [],
+  "next_page_token": "CsQCMwEAABW8ULTiWIWXF7n1s9eJ6QGQdXMp_FhyDZGKcPaDcKaKS8ZoCQ5xStN9gSuObGFbvgP9ckNJzmCo_4jFGXqPsb2VMfBsc_UB4WL2IZlAonPV0MWhUzxpM4k6v_tMxicL0X8V7N7QdmPhEO-o8TPKkny0sDj5DiXet55RJc61DiJkg2Wl6eLrIdrkRQnuV7b_47v4cUTK5NGovilEmx3ZL0hkxrvEkU1ocD5hbx1Sj_oORgDcWURgFWUfTsTa3_XNTVFkKGaSTaUSSmhivn3eL4yydOyUfA23pbx_sVX7oaf2BJZG-h5ZtdzM67FH_bdXul1WjeLrxxxReqa0ngbwfotHAAmzZQ7a67XXWvIdTpAUrX9RMBzyTycyaC9Y1EhqWujj0Vxbl0fuaZC3274fu3c5Jj9WOjgppqAyhpZ5S7NzEhBai-OGpVnX32Bn7p1ikHgUGhTn80N_ScX3CqOfcjMPnc2WhZDzHg",
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.38506389999999,
+          "lng": 2.1734035
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.4695761,
+            "lng": 2.2280099
+          },
+          "southwest": {
+            "lat": 41.320004,
+            "lng": 2.0695258
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id": "5695851cee37adbcea7305c0473a15906dbcab8f",
+      "name": "Barcelona",
+      "photos": [
+        {
+          "height": 1350,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102237341607435241342/photos\">Srimantan Mitra</a>"
+          ],
+          "photo_reference": "CmRaAAAALjJHdfaTmwProV-ofZiXhNWFFjI1L1etDW8vqwCcx3Hcbtlo5QPNoGI1WpYxBlEGkwtGWAZZKkLH4H2LB7H6nS_9hb7gWnL4FFPiVvMflNdInJFC4K4VqTnNbfBFmz6aEhC9HQJFhX0-yX9YB-S1sEyrGhRphIwNYx525t7J8kQ2jmVqmLSXTw",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJ5TCOcRaYpBIRCmZHTz37sEQ",
+      "reference": "ChIJ5TCOcRaYpBIRCmZHTz37sEQ",
+      "scope": "GOOGLE",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "vicinity": "Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.39419739999999,
+          "lng": 2.1490162
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3955408802915,
+            "lng": 2.150527330291502
+          },
+          "southwest": {
+            "lat": 41.3928429197085,
+            "lng": 2.147829369708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "1b6f5836118a6444d90dd415478896a3fa9e9b8f",
+      "name": "Hotel Hesperia Barcelona Presidente",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 970,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103359066151863102260/photos\">Hotel Hesperia Barcelona Presidente</a>"
+          ],
+          "photo_reference": "CmRaAAAASbup_b4Ja6Ofg6udqrZFheXSJe48_yPocSlmajckLJriQrNiwMgA3xIXKNp5baB7s2KDXSFZu4_iDjdxlm-pQeDB3qF6Di9ITiMhe6T9nx9pPInDSxTe0Dt75CIBXlptEhCMjMDyKC5L4pPBMrtfNAyOGhRagJPZbkHnMVkeK0eA4KFyiKk8Jw",
+          "width": 2000
+        }
+      ],
+      "place_id": "ChIJw7XAZZyipBIRvIRiPPFeXQw",
+      "plus_code": {
+        "compound_code": "94VX+MJ Barcelona, Spain",
+        "global_code": "8FH494VX+MJ"
+      },
+      "rating": 4.2,
+      "reference": "ChIJw7XAZZyipBIRvIRiPPFeXQw",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 921,
+      "vicinity": "Avinguda Diagonal, 570, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3873517,
+          "lng": 2.1604111
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3886816302915,
+            "lng": 2.161891680291502
+          },
+          "southwest": {
+            "lat": 41.38598366970851,
+            "lng": 2.159193719708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "bdce6a6be64688704196abadcd9164159f86daa4",
+      "name": "Axel Hotel Barcelona",
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107469097172866327052/photos\">Axel Hotel Barcelona</a>"
+          ],
+          "photo_reference": "CmRaAAAAG1CChhYqmJFughrlCao-0cJDMCkiX8oaivAuc_qxL3o0FAQLIeVHairP83_CSPrd44xbbomnSo3SyEUhZ5ywwaa7ctP_Bi_aT0ImrHroXYom2aNvGQRIw-yiK3FBPtFKEhA9sfmgCdMoQrbvkRw5wO-nGhT6CSstjdEkR_A5-QsyPbucIXDqlw",
+          "width": 1366
+        }
+      ],
+      "place_id": "ChIJVcbHPIyipBIRWrHMzoCooIQ",
+      "plus_code": {
+        "compound_code": "95P6+W5 Barcelona, Spain",
+        "global_code": "8FH495P6+W5"
+      },
+      "rating": 4.2,
+      "reference": "ChIJVcbHPIyipBIRWrHMzoCooIQ",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1629,
+      "vicinity": "Carrer d'Aribau, 33, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3949242,
+          "lng": 2.1593099
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3962406302915,
+            "lng": 2.160703030291502
+          },
+          "southwest": {
+            "lat": 41.3935426697085,
+            "lng": 2.158005069708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "01f8ac8d8fc543c4ea4f7643a3ef93f1c4ac32c0",
+      "name": "Gallery Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 385,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112819287464370066067/photos\">Gallery Hotel</a>"
+          ],
+          "photo_reference": "CmRaAAAA8yJP6nF7JBm7C0ZROTBSQEd0_6-4UAgZKvR5epW5qSx9yNoipwlzHGpUuwIFeD0y3b5FchGy-emP1dgjtTTfZtlyAz4FdziXp9NwwmHysy_dd8nwMyf-eZFQRDy8jxLCEhBt9L14UmgJ30oZ7RcS3eSeGhRMfj5FU-eVJcygWyPSROZ-CcTnfQ",
+          "width": 640
+        }
+      ],
+      "place_id": "ChIJ1efPXZGipBIRFNhPTEsXvQI",
+      "plus_code": {
+        "compound_code": "95V5+XP Barcelona, Spain",
+        "global_code": "8FH495V5+XP"
+      },
+      "rating": 4.3,
+      "reference": "ChIJ1efPXZGipBIRFNhPTEsXvQI",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1168,
+      "vicinity": "Carrer del Rosselló, 249, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3931843,
+          "lng": 2.1615302
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39451203029149,
+            "lng": 2.162966730291501
+          },
+          "southwest": {
+            "lat": 41.3918140697085,
+            "lng": 2.160268769708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "5620ab55063f2063c2be6287507029f4699fc41f",
+      "name": "Alexandra Barcelona Hotel, Curio Collection by Hilton",
+      "photos": [
+        {
+          "height": 1480,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100868913834233133467/photos\">Alexandra Barcelona Hotel, Curio Collection by Hilton</a>"
+          ],
+          "photo_reference": "CmRaAAAALqdRPBCAoyT3ujK3zAyzGUaZBm1bwiFt8I6wwMg8bs-HXsFTlwftucw5hTUFQMpls8nS0h43JHj7fSpjbslHi3MkFFCmjQRm4UaouCTJ4Y5VH7Ddw560ohyB2Uy8mEcFEhAlkBCKJLUrl8O3Ve7TBAdFGhRYKrc0zgZM0TUI8YNB-xsh3GOcPw",
+          "width": 2220
+        }
+      ],
+      "place_id": "ChIJ97EQTpKipBIRMtHj_fly--c",
+      "plus_code": {
+        "compound_code": "95V6+7J Barcelona, Spain",
+        "global_code": "8FH495V6+7J"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ97EQTpKipBIRMtHj_fly--c",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 566,
+      "vicinity": "Carrer de Mallorca, 251, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3935314,
+          "lng": 2.1623159
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3950006302915,
+            "lng": 2.163853280291502
+          },
+          "southwest": {
+            "lat": 41.3923026697085,
+            "lng": 2.161155319708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "46b113290dd70bcba8572ed9b1862e9d9c74fada",
+      "name": "Hotel Condes de Barcelona",
+      "photos": [
+        {
+          "height": 1152,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112639709898732822933/photos\">Hotel Condes de Barcelona</a>"
+          ],
+          "photo_reference": "CmRaAAAAYdLBEV7W4hogTT4mta67pGHRQQnPeTcA-a4mTJrXOKR76TqYzeiRGviH3TgLR5L-ARoW-1y5rlV2iMpjDeE9Y00nJ6ECSdZRF44o80pVZrff2i5AEQsNvBHK4LKiIqsSEhDYMr6aQvNbFZNhNkpjOCYUGhTXLJjhlOjpO-bj-pt0FJsMOXCIWg",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJc8CcAZOipBIRny6zm3CyVFo",
+      "plus_code": {
+        "compound_code": "95V6+CW Barcelona, Spain",
+        "global_code": "8FH495V6+CW"
+      },
+      "rating": 4.4,
+      "reference": "ChIJc8CcAZOipBIRny6zm3CyVFo",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1040,
+      "vicinity": "Passeig de Gràcia, 73, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3894654,
+          "lng": 2.1662651
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3906898802915,
+            "lng": 2.167540030291502
+          },
+          "southwest": {
+            "lat": 41.3879919197085,
+            "lng": 2.164842069708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "10831f270b667d0fc61cfeafd4d4d306700342c7",
+      "name": "Hotel NH Collection Barcelona Gran Hotel Calderón",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3504,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103742002052198508446/photos\">Hotel NH Collection Barcelona Gran Hotel Calderón</a>"
+          ],
+          "photo_reference": "CmRaAAAA1uywi4fE9kBFzI0oBUSDs7B37V5QRFaYg9hloqyGe6s2z4X-O5YUvdb1j2Ggxzb5H4TKpHwc6P50dA27mOG9cRn1TS-CWvYUcfFDslkCXpbTFWBbqyDA-ubJsJNtKveGEhBNo6iNOF5DyGbwt_2-_zKCGhRFybnLSFr-iKquyb3DA2Rswn17Hw",
+          "width": 5920
+        }
+      ],
+      "place_id": "ChIJCYJu6fKipBIRXT_peg0A9-8",
+      "plus_code": {
+        "compound_code": "95Q8+QG Barcelona, Spain",
+        "global_code": "8FH495Q8+QG"
+      },
+      "rating": 4.4,
+      "reference": "ChIJCYJu6fKipBIRXT_peg0A9-8",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1421,
+      "vicinity": "Rambla de Catalunya, 26, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3909827,
+          "lng": 2.1417208
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39224293029149,
+            "lng": 2.143042380291502
+          },
+          "southwest": {
+            "lat": 41.3895449697085,
+            "lng": 2.140344419708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "c25513497b2f1af5d7695bf87c8a02b1f09e3efe",
+      "name": "Meliá Barcelona Sarrià",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102973002816136346303/photos\">Marta Tomàs Subirats</a>"
+          ],
+          "photo_reference": "CmRaAAAAyKBGLITej777lt5C-zL1AG_0Tk1AENhjjCgd8H3kDhZEzskj6QtXSCir31EjdBvi3fgAImGJ5X-EcD3Q3XDHhkEkXFzfVpLrsc_oY9ce9_-0ePJ6AXWU7GF4P1ZFO9mdEhCiMHYPsA2bkfc61T4s3496GhSM27NMOx0Rkom3WjgMivTie1lXiA",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJq4g42nmYpBIRs7UgdcRW_vI",
+      "plus_code": {
+        "compound_code": "94RR+9M Barcelona, Spain",
+        "global_code": "8FH494RR+9M"
+      },
+      "rating": 4.2,
+      "reference": "ChIJq4g42nmYpBIRs7UgdcRW_vI",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1318,
+      "vicinity": "Avinguda de Sarrià, 50, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3944427,
+          "lng": 2.165064999999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39569463029149,
+            "lng": 2.166451530291502
+          },
+          "southwest": {
+            "lat": 41.3929966697085,
+            "lng": 2.163753569708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "0fe623dde1eb897c1f748bdd1d0101d28ce4e73b",
+      "name": "Hotel Claris GL",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 813,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107592703834940407734/photos\">Hotel Claris 5* GL</a>"
+          ],
+          "photo_reference": "CmRaAAAADdGj1-q1-71_0AxjPqrtXJwnlB5YixKGBcJlBC184sBAfiTPwH4BjluThaWUzMSIPucz03P3TEc0suhsw1W71UTFyZRglIvhUHVnFRuh7FrBZp4Wt6hjFaTYMY_BmD39EhAtbC3bZCD58cAdHEwz74A2GhTf-lKMVIVGXI5I9DnS_xPcmGYotA",
+          "width": 1201
+        }
+      ],
+      "place_id": "ChIJ9WP3y-yipBIRHF1rHOaq5Y4",
+      "plus_code": {
+        "compound_code": "95V8+Q2 Barcelona, Spain",
+        "global_code": "8FH495V8+Q2"
+      },
+      "rating": 4.4,
+      "reference": "ChIJ9WP3y-yipBIRHF1rHOaq5Y4",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 671,
+      "vicinity": "Carrer de Pau Claris, 150, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3910625,
+          "lng": 2.1682161
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3924707802915,
+            "lng": 2.169484880291502
+          },
+          "southwest": {
+            "lat": 41.3897728197085,
+            "lng": 2.166786919708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "a0a5de2ec1ca24bf5e72f9b67140bcfb920799d0",
+      "name": "Hotel HCC St. Moritz",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2131,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106979460939125578887/photos\">Hotel HCC St. Moritz</a>"
+          ],
+          "photo_reference": "CmRaAAAAVvgZwmWga99eKjwHVsk_AOywNKZH3Uj-908uqiPmMioa6HKDusDmUAGrj3C0ceVRjGdYOBZ4RZKfC3jf3LoE1sKDvjDOGmSoW-HHxS1lAU2_OrpV1cDKn33Si6tFT4kHEhBqjP99IBBAkHR4dOVP9_voGhTS1HVDP4hINNN-W-_0lgPCrTzuNA",
+          "width": 2126
+        }
+      ],
+      "place_id": "ChIJx92Gi-2ipBIRV9C0LxDPUKw",
+      "plus_code": {
+        "compound_code": "95R9+C7 Barcelona, Spain",
+        "global_code": "8FH495R9+C7"
+      },
+      "rating": 4.3,
+      "reference": "ChIJx92Gi-2ipBIRV9C0LxDPUKw",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 561,
+      "vicinity": "Carrer de la Diputació, 264, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3810673,
+          "lng": 2.1455125
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38257368029149,
+            "lng": 2.146800580291502
+          },
+          "southwest": {
+            "lat": 41.37987571970849,
+            "lng": 2.144102619708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "09d175692179e995de1c324d02118d544dc1a3f3",
+      "name": "H10 Itaca",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116904676377414034431/photos\">H10 Itaca</a>"
+          ],
+          "photo_reference": "CmRaAAAAJtxbP7Q5SULwai0jPTk915LqJIV3PMG-9kVkpuyaI6hraKrPIvr5b-GHBh4BzWAqRu2jrBUdwiwNOS4_zaV45Yh0JLLL9iSwWTf_2nlxaDhEz1jwByh1HvMRJbPCcj0EEhASsRV_AmYiziBNxBldgeI8GhTLLg5imKqJ_07-irtw_EWeBDD91w",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJ0elV_H-ipBIRTIe4D1rIxXU",
+      "plus_code": {
+        "compound_code": "94JW+C6 Barcelona, Spain",
+        "global_code": "8FH494JW+C6"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ0elV_H-ipBIRTIe4D1rIxXU",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 795,
+      "vicinity": "Avinguda de Roma, 22, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.38917799999999,
+          "lng": 2.1663
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3905025802915,
+            "lng": 2.167617630291502
+          },
+          "southwest": {
+            "lat": 41.3878046197085,
+            "lng": 2.164919669708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "1c033627dca0845820dac1f87d24235c80899d49",
+      "name": "Hotel Onix Rambla",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2438,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116082607007323694090/photos\">Hotel Onix Rambla</a>"
+          ],
+          "photo_reference": "CmRaAAAAi3i6kk5UIN0XAZyGvk56c_H02OIehmaLouUIAIonmiW2U3jiddt-upwR2ipe6jNOvOxuqU3DaROWa8gQCH7jRGH8-JKAru-K7frp1W1L80ATT-OBOmI3U2DK-Lcf_cOXEhABYcsv42jXlr6ZnkJ2MpPkGhTW_E3O7GHGkjFBRKEVj3SUuqxyuw",
+          "width": 3100
+        }
+      ],
+      "place_id": "ChIJI9cZ7_KipBIR1-k2f9knBoA",
+      "plus_code": {
+        "compound_code": "95Q8+MG Barcelona, Spain",
+        "global_code": "8FH495Q8+MG"
+      },
+      "rating": 4.2,
+      "reference": "ChIJI9cZ7_KipBIR1-k2f9knBoA",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 310,
+      "vicinity": "Rambla de Catalunya, 24, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3869694,
+          "lng": 2.1685554
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38842083029149,
+            "lng": 2.170080880291502
+          },
+          "southwest": {
+            "lat": 41.3857228697085,
+            "lng": 2.167382919708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "843eaab2183a3abf6dfbe01fad275e9a05fc46fd",
+      "name": "H10 Catalunya Plaza Boutique Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102113536013311820156/photos\">H10 Catalunya Plaza Boutique Hotel</a>"
+          ],
+          "photo_reference": "CmRaAAAAgqkiMqOlnUw24XCrAOMR6kQVVm47B1aejULC6vrGd0FqNW88CLmGmoYxqH4_sSnxgBeAXiz5EE-V2eV4gUIlSKym4H7SgUmhSKOt-ANSD8dAy1ixel0_uqSqvyQZy1QYEhCslzZd7wvzRk9Mi1QCUUvBGhRdZSqVT_iKHh0VazdqMrsba3vo-g",
+          "width": 1292
+        }
+      ],
+      "place_id": "ChIJCWnbwfOipBIRUIfjsQvUQJ0",
+      "plus_code": {
+        "compound_code": "95P9+QC Barcelona, Spain",
+        "global_code": "8FH495P9+QC"
+      },
+      "rating": 4.3,
+      "reference": "ChIJCWnbwfOipBIRUIfjsQvUQJ0",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 381,
+      "vicinity": "Plaça de Catalunya, 7, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3921316,
+          "lng": 2.1523081
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39344163029151,
+            "lng": 2.153604580291502
+          },
+          "southwest": {
+            "lat": 41.39074366970851,
+            "lng": 2.150906619708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "e41ee2b79ee15211d8ac59ab625d0b3e0d50ca67",
+      "name": "Tàmara - Barcelona",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108017747236280841401/photos\">Joan Soler Martí</a>"
+          ],
+          "photo_reference": "CmRaAAAAtMiO8kbAGwN3fpHoXffNJpUjYLNV-v4WQITtffiPATUFAHircCSNm-HHuCZNfIGSQ157ETVZGIi1fWg4oLuvc-WnGxPnCkF7YBE1VPStaYLwLJcDIM4t5srLP2YRcIplEhBT1rEgKMeMlol-_OCksc5wGhSBxAxy1XRVF9RoWvthsgsCZBTbsw",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJPWK2IJuipBIRsPCRNMm1N1Q",
+      "plus_code": {
+        "compound_code": "95R2+VW Barcelona, Spain",
+        "global_code": "8FH495R2+VW"
+      },
+      "price_level": 2,
+      "rating": 3.8,
+      "reference": "ChIJPWK2IJuipBIRsPCRNMm1N1Q",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 637,
+      "vicinity": "Carrer de Muntaner, 178, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.38608159999999,
+          "lng": 2.1683428
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38749113029149,
+            "lng": 2.169653430291502
+          },
+          "southwest": {
+            "lat": 41.3847931697085,
+            "lng": 2.166955469708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "0cdc5c21c1648ca6cd52da6754254555b6e97956",
+      "name": "Hotel Pulitzer",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111559928484068640618/photos\">Vladimir Dimitrov</a>"
+          ],
+          "photo_reference": "CmRaAAAABoT8WOdhVKcXBFrdv_DkmC5SsV3o0osedQX1gJGOg_EtA_rcl0OflyHMmJy3zC-2tNDrAQRSWDqpYLrdtFY1KeBfOc5nrL5WDrj_xzS58LztnItHEU82fOBmlS3oXcuyEhCb7qKEWiVl2PwLMRu24Q1fGhTZmCThtyITPgFnWFvOaKJvmoupJw",
+          "width": 4048
+        }
+      ],
+      "place_id": "ChIJgXhci_OipBIR91I0pEH4UQ8",
+      "plus_code": {
+        "compound_code": "95P9+C8 Barcelona, Spain",
+        "global_code": "8FH495P9+C8"
+      },
+      "rating": 4.4,
+      "reference": "ChIJgXhci_OipBIR91I0pEH4UQ8",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 841,
+      "vicinity": "Carrer de Bergara, 8, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3842062,
+          "lng": 2.1607236
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3854402802915,
+            "lng": 2.162043430291502
+          },
+          "southwest": {
+            "lat": 41.38274231970851,
+            "lng": 2.159345469708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "02400ba1274e7a6c1008b0b1a1ed8d0178cc0fc4",
+      "name": "H10 Casanova",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108031625449270532650/photos\">H10 Casanova</a>"
+          ],
+          "photo_reference": "CmRaAAAA_RJ_WiSpFl5ghGt5hNzmbW4W2ulIKWD79BMVOXS_rbaCYue3IqqmeNHpDXygGlPbkU3YfKHQ03jN6TWwe4rUN8QhPwg9Oh3QUK0a33Jx4ejjlkYyXHpFP6kHf3Fa638dEhA-LJi8SFpWf1ZiP9L0GdNmGhSVC_HHCHfFonD0Lznkzsui1lJIVw",
+          "width": 1117
+        }
+      ],
+      "place_id": "ChIJ9SCax4uipBIRVEhMxhmezM0",
+      "plus_code": {
+        "compound_code": "95M6+M7 Barcelona, Spain",
+        "global_code": "8FH495M6+M7"
+      },
+      "rating": 4.4,
+      "reference": "ChIJ9SCax4uipBIRVEhMxhmezM0",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 916,
+      "vicinity": "Gran Via de les Corts Catalanes, 559, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3909532,
+          "lng": 2.1675783
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3922687802915,
+            "lng": 2.168972480291502
+          },
+          "southwest": {
+            "lat": 41.3895708197085,
+            "lng": 2.166274519708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "97ce2246345fedda0f632fffcd454060d8cad189",
+      "name": "Thai Barcelona",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1333,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114930327902147830702/photos\">Thai Barcelona | Royal Cuisine</a>"
+          ],
+          "photo_reference": "CmRaAAAArEFPYGozJpa3L4iJDelL_0LWquv2YKQXtE0faUu6_BlQdkAN8LjIhUiHMp95w6AoV8y1Hp-KoF-yLCqEgv1kl0kM_22Lik7Fd6ehQsRlNkH5a0ztfeQKDRyVWF56cFTeEhC0yBCbAzWOmFTinnBk6DQHGhSnB6sG9y7cP6EbPIYCn2UXEc0S-A",
+          "width": 2000
+        }
+      ],
+      "place_id": "ChIJDag3hu2ipBIR7vZDpaM-foo",
+      "plus_code": {
+        "compound_code": "95R9+92 Barcelona, Spain",
+        "global_code": "8FH495R9+92"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJDag3hu2ipBIR7vZDpaM-foo",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_delivery",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1665,
+      "vicinity": "Carrer de la Diputació, 273, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3859347,
+          "lng": 2.1514047
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38727873029149,
+            "lng": 2.152690230291502
+          },
+          "southwest": {
+            "lat": 41.3845807697085,
+            "lng": 2.149992269708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "9c8ab4c5cc7f94db80bc58048f3b6c92d492f42d",
+      "name": "Hotel Zenit Borrell",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100963389599035321233/photos\">Hotel Zenit Borrell</a>"
+          ],
+          "photo_reference": "CmRaAAAArys1cEnPxE4Ev-EV26mjbb1m-2ddWtsgcTEo8sXwfSIXci3ftFPOesih_wf8cmzIEl9cmtGV-AX30_9ED61eWvmTHegboULMhWqvnLeqIAfydYFv66h17NFwvUb_6oBQEhDDMoXS0PkrD5lHgjE9jDCWGhSPHDBB0H8mkwi67PuXcu2ezewHIg",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJrdPCnoaipBIRGRlfSAdo2Sc",
+      "plus_code": {
+        "compound_code": "95P2+9H Barcelona, Spain",
+        "global_code": "8FH495P2+9H"
+      },
+      "rating": 4,
+      "reference": "ChIJrdPCnoaipBIRGRlfSAdo2Sc",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 631,
+      "vicinity": "Carrer del Comte Borrell, 208, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.3860608,
+          "lng": 2.1542572
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3873654302915,
+            "lng": 2.155664480291502
+          },
+          "southwest": {
+            "lat": 41.3846674697085,
+            "lng": 2.152966519708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "75e765ae396c9bea76cc4ec1ada73438d1d9c128",
+      "name": "Hotel NH Barcelona Eixample",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107860780464582771273/photos\">Hotel NH Barcelona Eixample</a>"
+          ],
+          "photo_reference": "CmRaAAAAWveFZNYGeHQ9Nu4m7i8DBOP3ZeyRWOuMl5SZX_MWGz0V9lV3Q2lbqMhT9Nj815doYkGKYflo5nk6x6Kef4oznLxQDax5Qtf8t8Izo0tsS9PzHjAzEqMWcdeNZGogHtqVEhBgCBi7iwYgLl72Nzz8CObXGhTtdUX5l5dmWODZMUvSKGaRghIgcw",
+          "width": 612
+        }
+      ],
+      "place_id": "ChIJ55exCIaipBIRxrJZXEMbDUQ",
+      "plus_code": {
+        "compound_code": "95P3+CP Barcelona, Spain",
+        "global_code": "8FH495P3+CP"
+      },
+      "rating": 4,
+      "reference": "ChIJ55exCIaipBIRxrJZXEMbDUQ",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 566,
+      "vicinity": "Carrer de València, 105-107, Barcelona"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 41.41438309999999,
+          "lng": 2.1055991
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.4370448,
+            "lng": 2.1555601
+          },
+          "southwest": {
+            "lat": 41.3901309,
+            "lng": 2.0695258
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id": "7146bc9708c2ade621b93fa79b63b377fdc0fbb4",
+      "name": "Sarrià-Sant Gervasi",
+      "photos": [
+        {
+          "height": 2976,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114668977005786186357/photos\">Joan Morán Villalobos</a>"
+          ],
+          "photo_reference": "CmRaAAAATwHUSlyVn2_mPzHBZwXy-CVSdu0A7H_688IrzhFH20Fk4vYgAxl1001MRjB3LA_9KpzmlfygTfQDm_wyF83k88dwJ6AqzlHUxM9T3_noMPApL5Y7BchIX8r_t9JvEKcsEhDt5gWqSEGOm8JysEdPY1nZGhRurYvWSXbE1lLe-CHpByTeC9VcJA",
+          "width": 3968
+        }
+      ],
+      "place_id": "ChIJPZtvTy6YpBIR2Rr7VSOwe3Q",
+      "reference": "ChIJPZtvTy6YpBIR2Rr7VSOwe3Q",
+      "scope": "GOOGLE",
+      "types": [
+        "sublocality_level_1",
+        "sublocality",
+        "political"
+      ],
+      "vicinity": "Sarrià-Sant Gervasi"
+    }
+  ],
+  "status": "OK"
+}

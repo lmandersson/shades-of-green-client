@@ -6,10 +6,9 @@ export const Header = () => {
     <div>
       <h1>Shades of Green</h1>
       <nav>
-        <Link to="/">Dashboard</Link><br/>
-        {/* <Link to="/filters/">filters</Link><br/> */}
-        <Link to="/place/:place_id">place</Link>
-        <p> </p>
+        <Link to="/">Back</Link><br/>
+        {/* <Link to="/place/:place_id">place</Link> link is now from Marker on the map */}
+        <div> </div>
       </nav>
     </div>
   );
