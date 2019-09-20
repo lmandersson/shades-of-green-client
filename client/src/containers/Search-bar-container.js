@@ -5,7 +5,7 @@ import PlacesAutocomplete, {
 } from 'react-places-autocomplete';
 // import { selectPlace } from '../actions'; //TODO: redux
 
-const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
+// const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
 
 export const SearchBar = (props) => {
 
@@ -28,9 +28,6 @@ export const SearchBar = (props) => {
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
-            {/* <p>Lat: {props.coordinates.lat}</p>
-            <p>Lng: {props.coordinates.lng}</p> */}
-
             <input {...getInputProps({ placeholder: "Type city..." })} />
             <div>
               {loading ? <div>Loading...</div> : null}

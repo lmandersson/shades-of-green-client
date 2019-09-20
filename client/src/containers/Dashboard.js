@@ -19,15 +19,15 @@ export const Dashboard = () => {
   const [location, setLocation] = useState(currentLocation);
 
   // this should be the answer of the api call
-  const [places, setPlaces] = useState([]);
+  // const [places, setPlaces] = useState([]);
 
   //if a place has been seleced, should open infoWindow
   const [selectedPlace, setSelectedPlace] = useState(null);
 
   // filters states 
-  const [scoreRangeFilter, setScoreRangeFilter] = useState(null);
-  const [typeFilter, setTypeFilter] = useState(null);
-  const [radiusFilter, setRadiusFilter] = useState(null);
+  // const [scoreRangeFilter, setScoreRangeFilter] = useState(null);
+  // const [typeFilter, setTypeFilter] = useState(null);
+  // const [radiusFilter, setRadiusFilter] = useState(null);
 
   // TODO: useEffect for setPlaces when component mount when add api fetch
   useEffect(() => {
@@ -41,12 +41,12 @@ export const Dashboard = () => {
         setLocation={setLocation}
       />
       <Filters
-        setScoreRangeFilter={setScoreRangeFilter}
-        setTypeFilter={setTypeFilter}
-        setRadiusFilter={setRadiusFilter}
+        // setScoreRangeFilter={setScoreRangeFilter}
+        // setTypeFilter={setTypeFilter}
+        // setRadiusFilter={setRadiusFilter}
       />
       <WrappedMap
-        places={places} 
+        // places={places} // the answer from the api call 
         currentLocation={location}
         googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok&v=3.exp&libraries=geometry,drawing,places`}
         loadingElement={<div style={{ height: `80%` }} />}

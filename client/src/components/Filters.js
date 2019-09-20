@@ -2,9 +2,9 @@ import React from 'react';
 import Popup from "reactjs-popup";
 import CustomizedSlider from './Slider';
 import Button from '@material-ui/core/Button';
-import teal from '@material-ui/core/colors/teal';
+// import teal from '@material-ui/core/colors/teal';
 
-const primary = teal[500];
+// const primary = teal[500];
 
 export const Filters = (props) => {
 
@@ -13,10 +13,11 @@ export const Filters = (props) => {
     props.setTypeFilter(event.target.value);
     console.log(event.target.value)
   }
-  const handleScoreRangeChange = (event) => { // should toggle 
-    props.setScoreRangeFilter(event.target.value);
-    console.log(event.target.value)
-  }
+  // TODO: this should handle the score change, maybe add a button 
+  // const handleScoreRangeChange = (event) => { // should toggle 
+  //   props.setScoreRangeFilter(event.target.value);
+  //   console.log(event.target.value)
+  // }
   const handleRadiusChange = (event) => { // should toggle 
     props.setRadiusFilter(event.target.value);
     console.log(event.target.value)

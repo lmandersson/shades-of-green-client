@@ -47,20 +47,20 @@ ValueLabelComponent.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-const marks = [
-  {
-    value: 0,
-  },
-  {
-    value: 20,
-  },
-  {
-    value: 37,
-  },
-  {
-    value: 100,
-  },
-];
+// const marks = [
+//   {
+//     value: 0,
+//   },
+//   {
+//     value: 20,
+//   },
+//   {
+//     value: 37,
+//   },
+//   {
+//     value: 100,
+//   },
+// ];
 
 const AirbnbSlider = withStyles({
   root: {
