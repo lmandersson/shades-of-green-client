@@ -1,21 +1,17 @@
-import React, { useState } from 'react';
+import React /*, { useState }*/ from 'react';
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
 // import { selectPlace } from '../actions'; //TODO: redux
 
-// const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
-
-export const SearchBar = (props) => {
-
-  const [searchedPlace, setSearchedPlace] = useState("");
+export const SearchBar = ({ setLocation, searchedPlace, setSearchedPlace }) => {
 
   const handleSelect = async (value) => {
     const results = await geocodeByAddress(value);
     const latlng = await getLatLng(results[0]);
     setSearchedPlace(value);
-    props.setLocation(latlng);
+    setLocation(latlng);
   };
 
   return (

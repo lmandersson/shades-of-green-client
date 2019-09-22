@@ -3,39 +3,32 @@ import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
-import { selectPlace } from '../actions';
-
-const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
+// import { selectPlace } from '../actions'; // TODO: redux
 
 
-export const SearchBar = (props) => {
+export const SearchBar = ({ setLocation, searchedPlace, setSearchedPlace }) => {
 
   const handleSelect = async (value) => {
     const results = await geocodeByAddress(value);
     const latlng = await getLatLng(results[0]);
-    props.setSearchedPlace(value);
-    // props.setCoordinates(latlng);
-    props.setLocation(latlng);
+    setSearchedPlace(value);
+    setLocation(latlng);
   };
 
   return (
-    <div style={{ height: `10vh`, width: `80vw` }}>
-
+    <div className="search-box">
       <PlacesAutocomplete
-        value={props.searchedPlace}
-        onChange={props.setSearchedPlace}
+        value={searchedPlace}
+        onChange={setSearchedPlace}
         onSelect={handleSelect} // when the user selects one option
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
-            {/* <p>Lat: {props.coordinates.lat}</p>
-            <p>Lng: {props.coordinates.lng}</p> */}
-
             <input {...getInputProps({ placeholder: "Type city..." })} />
             <div>
               {loading ? <div>Loading...</div> : null}
               {suggestions.map(suggestion => {
-
+                
                 const style = {
                   backgroundColor: suggestion.active ? '#41b6e6' : '#ffffff'
                 };
@@ -52,3 +45,45 @@ export const SearchBar = (props) => {
     </div>
   )
 }
+
+// previous version 
+// export const SearchBar = (props) => {
+
+//   const handleSelect = async (value) => {
+//     const results = await geocodeByAddress(value);
+//     const latlng = await getLatLng(results[0]);
+//     props.setSearchedPlace(value);
+//     // props.setCoordinates(latlng);
+//     props.setLocation(latlng);
+//   };
+
+//   return (
+//     <div className="search-box">
+//       <PlacesAutocomplete
+//         value={props.searchedPlace}
+//         onChange={props.setSearchedPlace}
+//         onSelect={handleSelect} // when the user selects one option
+//       >
+//         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+//           <div>
+//             <input {...getInputProps({ placeholder: "Type city..." })} />
+//             <div>
+//               {loading ? <div>Loading...</div> : null}
+//               {suggestions.map(suggestion => {
+
+//                 const style = {
+//                   backgroundColor: suggestion.active ? '#41b6e6' : '#ffffff'
+//                 };
+
+//                 return (
+//                   <div {...getSuggestionItemProps(suggestion, { style })}>
+//                     {suggestion.description}
+//                   </div>)
+//               })}
+//             </div>
+//           </div>
+//         )}
+//       </PlacesAutocomplete>
+//     </div>
+//   )
+// }

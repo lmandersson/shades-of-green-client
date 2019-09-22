@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# This contains secrets, don't store in source control
+.env 

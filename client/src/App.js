@@ -7,9 +7,8 @@ import { Place } from './containers/Place-details';
 import { Header } from './components/Header';
 
 
-// const API_KEY = 'AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok';
 
-function App () {
+function App () {  
   return (
     <Router>
       <div>
