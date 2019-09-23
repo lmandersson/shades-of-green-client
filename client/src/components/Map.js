@@ -13,12 +13,11 @@ const getSelectedInfo = (selectedPlace, votedPlaces) => {
   : null;
 }
 
-// TODO: use this functionallity to defrentiate between voted and unvoted places:
+// FIXME: use this functionallity to defrentiate between voted and unvoted places:
 const paintVotedPlace = (markerPlace, votedPlaces) => {
-  // const match = votedPlaces && votedPlaces.find(votedPlace => markerPlace.place_id === votedPlace.google_id);
-  const match = votedPlaces && votedPlaces.includes(markerPlace);
+  const match = votedPlaces && votedPlaces.find(votedPlace => markerPlace.place_id === votedPlace.google_id);
+  console.log(match, 'match');
   
-  console.log('match: ', match);
   return match
   ? process.env.PUBLIC_URL + 'favicon-32.png'  // presenting as a colorful icon
   : process.env.PUBLIC_URL + 'black-logo.png'; // presenting a black icon
@@ -43,8 +42,7 @@ const Map = ({ location, places = [], selectedPlace, setSelectedPlace, votedPlac
               lng: place.geometry.location.lng
             }}
             icon={
-             paintVotedPlace(place)
-              // process.env.PUBLIC_URL + 'black-logo.png'
+              paintVotedPlace(place, votedPlaces)
             } 
             onClick={() => {
               setSelectedPlace(place);

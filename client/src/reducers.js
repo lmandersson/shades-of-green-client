@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
   places: [],
   votedPlaces: [],
+  rating: null
 }
 
 export default (state = INITIAL_STATE, action) => {

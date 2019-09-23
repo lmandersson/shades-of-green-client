@@ -36,9 +36,6 @@ const Dashboard = ({ places, sendPlacesToRedux, votedPlaces, sendVotedPlacesToRe
   //if a place has been seleced, should open infoWindow
   const [selectedPlace, setSelectedPlace] = useState(null);
 
-  // if a place has been voted, should be saved in db and present differently in map 
-  // const [votedPlaces, setVotedPlaces] = useState(null);
-
 
   //✅ handling with the places list.
   const PLACES_API = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?`

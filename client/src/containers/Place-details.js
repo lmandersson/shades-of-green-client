@@ -1,15 +1,32 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {getVotedPlaces} from '../actions'
+import { getVotedPlaces, getRating } from '../actions'
 import { StarVoting } from '../components/Voter';
 
 const Place = ({ match, places = [], votedPlaces = [], sendVotedPlacesToRedux }) => {
+
   const [rating, setRating] = useState(null)
-  const placeIdFromURL = match.params.id;  
-  
-  const place = places.length 
-    ? places.find(place => place.place_id === placeIdFromURL) 
+  const placeIdFromURL = match.params.id;
+
+  const fetchPostVote = (vote) => {
+    const BASE_URL = `http://localhost:5000/vote`;
+    fetch(BASE_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ place_google_id: placeIdFromURL, score: vote, user_id:1}),
+    })
+      .then(response => response.json())
+      .then(() => {        
+        setRating(vote)
+      })
+      .catch(error => console.error(error));
+  };
+
+  const place = places.length
+    ? places.find(place => place.place_id === placeIdFromURL)
     : JSON.parse(localStorage.getItem('lastPlace'));
   if (!place) return null;
   localStorage.setItem('lastPlace', JSON.stringify(place))
@@ -21,22 +38,7 @@ const Place = ({ match, places = [], votedPlaces = [], sendVotedPlacesToRedux })
   const MAX_WIDTH = 400;
   const GET_PHOTOS_URL = place && `${PHOTOS_API}maxwidth=${MAX_WIDTH}&photoreference=${place.photos[0].photo_reference}&key=${API_KEY}`;
 
-  // 👇🏻 functionallity to send a new vote to the database.
-  // const BASE_URL = `http://localhost:5000/places/${place_id}`; 
 
-  // const addVote = (vote) => {
-  //   fetch(BASE_URL, {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(vote),
-  //   })
-  //     .then(response => response.json())
-  //     // .then(votedPlaces => sendVotedPlacesToRedux(votedPlaces))
-  //     .catch(error => console.error(error));
-  // };
-  
   return (
     <div>
       <Link to="/">
@@ -45,9 +47,11 @@ const Place = ({ match, places = [], votedPlaces = [], sendVotedPlacesToRedux })
       <h1>{place.name}</h1>
       <img src={GET_PHOTOS_URL} alt="That cool Restaurant" width="300vw" />
       <StarVoting
+        placeId={placeIdFromURL}
         rating={rating}
-        setRating={setRating}
+        setVote={fetchPostVote}
       />
+      {rating ? <h3>Your vote: {rating}</h3> : null}
       <h3>Address</h3>
       <p>{place.vicinity}</p>
       {place.opening_hours.open_now ? <p>Open now: Yes! <span role="img" aria-label="Happy">🤩</span></p> : <p>Open now: No! <span role="img" aria-label="Sad">🙁</span></p>}
@@ -58,11 +62,13 @@ const Place = ({ match, places = [], votedPlaces = [], sendVotedPlacesToRedux })
 const mapStateToProps = (state) => ({
   places: state.places,
   votedPlaces: state.votedPlaces,
+  rating: state.rating,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   // Map your dispatch actions (setStates)
   sendVotedPlacesToRedux: (votedPlaces) => dispatch(getVotedPlaces(votedPlaces)),
+  setRatingToRedux: (rating) => dispatch(getRating(rating)),
 });
 
 // the actual drilling
