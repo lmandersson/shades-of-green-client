@@ -1,0 +1,4 @@
+- Style the land page
+- Style the app
+- Add redux store and all and start with the places state, then location 
+- Make the presentation 

@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from 'react'
-// import { connect } from 'react-redux'; // -> redux
-// import { selectPlace } from '../actions'; // -> redux 
+import { connect } from 'react-redux'; 
 
-// importing services (fetch requests): 👇🏻
-// import getVotedPlaces from '../services/place-db-request';
-// import addVote from '../services/vote-request';
-
+import { updatePlaces } from '../actions'; 
 import { WrappedMap } from '../components/Map';
 import { SearchBar } from './Search-bar-container';
-import { results } from '.././mock-data/vegan-res-bcn.json';
 // import { Filters } from '../components/Filters';
+import { getVotedPlaces } from '../actions'
 
 
-export const Dashboard = () => {
+const Dashboard = ({ places, sendPlacesToRedux, votedPlaces, sendVotedPlacesToRedux }) => {
   //✅ handling with the location of the user:
   const currentLocation = { // this is the default location (BCN🔆 is lat: 41.390205, lng: 2.154007)
-    lat: 43.390205,
+    lat: 45.390205,
     lng: 2.154007
   };
 
@@ -35,68 +31,48 @@ export const Dashboard = () => {
     }
   }, [])
 
-
   // if a places has been searched in the search bar:
   const [searchedPlace, setSearchedPlace] = useState('');
-
   //if a place has been seleced, should open infoWindow
   const [selectedPlace, setSelectedPlace] = useState(null);
 
   // if a place has been voted, should be saved in db and present differently in map 
-  const [votedPlaces, setVotedPlaces] = useState(null);
+  // const [votedPlaces, setVotedPlaces] = useState(null);
 
-  //🅾️ handling with the places list. 
-  // should init with the places around the currentLocation
-  // and update according to searchedPlace changes:
-  // 👇🏻 hardcoded now:
-  const currentLocationPlaces = results;
 
+  //✅ handling with the places list.
   const PLACES_API = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?`
   const API_KEY = `AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok`
-
-  const PLACE_TYPES = `art_gallery,bakery,beauty_salon,cafe,clothing_store,hair_care,gym,restaurant`
+  const PLACE_TYPES = `restaurant,cafe,clothing_store,gym` // TODO: change not to see hotels 
   const GET_PLACES_URL = `${PLACES_API}key=${API_KEY}&location=${location.lat},${location.lng}&radius=2000&type=${PLACE_TYPES}`;
 
-  const [places, setPlaces] = useState(currentLocationPlaces);
+  const fetchPlaces = () => {
+      const proxyurl = "https://cors-anywhere.herokuapp.com/";
+      fetch(proxyurl + GET_PLACES_URL, {
+        method: 'GET',
+      })
+        .then(res => res.json()) 
+        .then((placesArr) => {sendPlacesToRedux(placesArr)}) 
+        .catch(() => console.log("🧨 Can’t access response. Blocked by browser?"))
+    }
 
-  //TODO: activate this get places with useEffect: 👇🏻
-  // useEffect(() => {
-  //   let mounted = true;
-  //   console.log('useEffect called!')
-
-  //   function getPlaces () {
-  //     const proxyurl = "https://cors-anywhere.herokuapp.com/";
-  //     return fetch(proxyurl + GET_PLACES_URL, {
-  //       method: 'GET',
-  //     })
-  //       .then(res => res.json()) 
-  //       .then(fetchedPlaces => mounted ? setPlaces(fetchedPlaces) && console.log(`new places have being set! Here: ${fetchedPlaces}`) : console.log("No component, no places!")) 
-  //       .catch(() => console.log("🧨 Can’t access response. Blocked by browser?"))
-  //   }
-  //   // calling the getter function 
-  //   getPlaces() 
-
-  //   // this is the cleanup 
-  //   return () => {
-  //     mounted = false; 
-  //     console.log(`cleaned the component from the dom 🧹`)
-  //   };
-  // }, [GET_PLACES_URL]); // Should be this handleSelect in search-bar setLocation (not only the selected place) so location is updated to the seaeches 
-
-
+  useEffect(fetchPlaces, [GET_PLACES_URL])
 
   // 🅾️ handling with the votes -> should be updated according to the rating state 
   // url of the backend:
   const BASE_URL = 'http://localhost:5000/places';
 
-  function getVotedPlaces () {
+  function fetchVotedPlaces () {
     fetch(BASE_URL, {
       method: 'GET'
     })
       .then(res => res.json())
-      .then(votedPlaces => setVotedPlaces(votedPlaces))
+      .then(votedPlaces => sendVotedPlacesToRedux(votedPlaces))
       .catch(err => console.log(err));
   }
+
+  useEffect(fetchVotedPlaces, []) // 
+
 
   return (
     <div className="dashboard">
@@ -120,7 +96,7 @@ export const Dashboard = () => {
         selectedPlace={selectedPlace}
         places={places}
         votedPlaces={votedPlaces}
-        getVotedPlaces={getVotedPlaces}
+        // getVotedPlaces={getVotedPlaces}
       />
     </div>
   )
@@ -133,14 +109,17 @@ export const Dashboard = () => {
 // const [radiusFilter, setRadiusFilter] = useState(null);
 
 // TODO: Redux
-// const mapStateToProps = (state) => ({
-  //   // Map your state to props
-  //   id: state.id,
-// });
+const mapStateToProps = (state) => ({
+    // describing what im drilling: (states)
+    places: state.places,
+    votedPlaces: state.votedPlaces,
+});
 
-// const mapDispatchToProps = (dispatch) => ({
-//   // Map your dispatch actions
-//   selectPlace: () => dispatch(selectPlace()),
-// });
+const mapDispatchToProps = (dispatch) => ({
+  // Map your dispatch actions (setStates)
+  sendPlacesToRedux: (places) => dispatch(updatePlaces(places)),
+  sendVotedPlacesToRedux: (votedPlaces) => dispatch(getVotedPlaces(votedPlaces)),
+});
 
-// export default connect(selectPlace)(Dashboard);
+ // the actual drilling
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

@@ -1,25 +1,24 @@
 import 'typeface-roboto';
 import React from 'react';
-import App from './App';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import App from './App';
+import reducers from './reducers';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 require('dotenv').config();
 
-// import { Provider } from 'react-redux';
-// import { createStore } from 'redux';
-// import teal from '@material-ui/core/colors/teal';
 
-// import reducers from './reducers';
 
-// let store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ &&
-//   window.__REDUX_DEVTOOLS_EXTENSION__());
+let store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ &&
+  window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
-  // <Provider store={store}>
+  <Provider store={store}>
     <App />
-  // </Provider>
-  ,document.getElementById('root')
+  </Provider>, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -1,19 +1,27 @@
-// import { combineReducers } from 'redux';
+const INITIAL_STATE = {
+  places: [],
+  votedPlaces: [],
+}
 
-const selectedPlace = (state = {}, action) => {
+export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case 'SELECT_PLACE': 
-      return { id : action.id }; // the id of the selected place 
+    case 'UPDATE_PLACES':      
+      return {
+        ...state,
+        places:
+          [...action.places.results]
+      }
+    case 'GET_VOTED_PLACES': 
+      return {
+        ...state,
+        votedPlaces: [
+          ...state.votedPlaces, // the previous places that were there
+          ...action.votedPlaces // the new places we just added 
+        ]
+      }
     default:
       return state;
   }
-}
+};
 
 
-// const reducers = combineReducers({
-//   selectedPlace,
-//   // clearedSelection,
-// });
-
-// export default reducers;
-export default selectedPlace;

@@ -1,4 +1,4 @@
-
+// should be inside useEffect, changing for every rating 
 const BASE_URL = `http://localhost:5000/places/${place_id}`; // FIXME: place_id? How to access? 
 
 export const addVote = () => {

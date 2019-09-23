@@ -1,31 +1,47 @@
-import React, { useState } from 'react'
-
-// TODO: those 3 fetch requests will replace the use of mock data
-// import {getVotedPlaces} from '../services/place-db-request';
-// import results from '../services/place-google-request';
-
-import { results } from '.././mock-data/vegan-res-bcn.json';
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import {getVotedPlaces} from '../actions'
 import { StarVoting } from '../components/Voter';
 
-export const Place = (props) => {
-  
+const Place = ({ match, places = [], votedPlaces = [], sendVotedPlacesToRedux }) => {
   const [rating, setRating] = useState(null)
+  const placeIdFromURL = match.params.id;  
   
-  const placeIdFromURL = props.match.params.id;
-  const place = results.find(place => place.place_id === placeIdFromURL);
-  // const place = results[0]; // FIXME:
-  console.log("place: ",place)
-  console.log(results);
+  const place = places.length 
+    ? places.find(place => place.place_id === placeIdFromURL) 
+    : JSON.parse(localStorage.getItem('lastPlace'));
+  if (!place) return null;
+  localStorage.setItem('lastPlace', JSON.stringify(place))
 
+  // const placeVote = getVotedPlaces.average_score;
   // geting the photo URL, no need for third fetch for the api:
   const PHOTOS_API = `https://maps.googleapis.com/maps/api/place/photo?`
   const API_KEY = `AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok`
   const MAX_WIDTH = 400;
-  const GET_PHOTOS_URL = `${PHOTOS_API}maxwidth=${MAX_WIDTH}&photoreference=${place.photos[0].photo_reference}&key=${API_KEY}`;
-  // const placeVote = getVotedPlaces.average_score;
+  const GET_PHOTOS_URL = place && `${PHOTOS_API}maxwidth=${MAX_WIDTH}&photoreference=${place.photos[0].photo_reference}&key=${API_KEY}`;
 
+  // 👇🏻 functionallity to send a new vote to the database.
+  // const BASE_URL = `http://localhost:5000/places/${place_id}`; 
+
+  // const addVote = (vote) => {
+  //   fetch(BASE_URL, {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(vote),
+  //   })
+  //     .then(response => response.json())
+  //     // .then(votedPlaces => sendVotedPlacesToRedux(votedPlaces))
+  //     .catch(error => console.error(error));
+  // };
+  
   return (
     <div>
+      <Link to="/">
+        <p><span role="img" aria-label="Back">👈</span></p>
+      </Link>
       <h1>{place.name}</h1>
       <img src={GET_PHOTOS_URL} alt="That cool Restaurant" width="300vw" />
       <StarVoting
@@ -38,3 +54,16 @@ export const Place = (props) => {
     </div>
   )
 }
+
+const mapStateToProps = (state) => ({
+  places: state.places,
+  votedPlaces: state.votedPlaces,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  // Map your dispatch actions (setStates)
+  sendVotedPlacesToRedux: (votedPlaces) => dispatch(getVotedPlaces(votedPlaces)),
+});
+
+// the actual drilling
+export default connect(mapStateToProps, mapDispatchToProps)(Place);

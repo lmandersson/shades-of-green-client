@@ -2,11 +2,31 @@ import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps";
 import { Link } from "react-router-dom";
 
-// TODO: was replaced with the places state (in dashbpard)
-import { results } from '.././mock-data/vegan-res-bcn.json';
 
-const Map = ({ location, places, selectedPlace, setSelectedPlace, votedPlaces }) => {
+const getSelectedInfo = (selectedPlace, votedPlaces) => {
+  const match = votedPlaces.find(votedPlace => selectedPlace.place_id === votedPlace.google_id)  
+  return match 
+  ? <div>
+      <p>Score: {match.average_score}</p>
+      <p>{match.num_of_votes} people rated this place</p>
+  </div> 
+  : null;
+}
+
+// TODO: use this functionallity to defrentiate between voted and unvoted places:
+const paintVotedPlace = (markerPlace, votedPlaces) => {
+  // const match = votedPlaces && votedPlaces.find(votedPlace => markerPlace.place_id === votedPlace.google_id);
+  const match = votedPlaces && votedPlaces.includes(markerPlace);
   
+  console.log('match: ', match);
+  return match
+  ? process.env.PUBLIC_URL + 'favicon-32.png'  // presenting as a colorful icon
+  : process.env.PUBLIC_URL + 'black-logo.png'; // presenting a black icon
+}
+
+
+const Map = ({ location, places = [], selectedPlace, setSelectedPlace, votedPlaces }) => {
+  console.log('votedPlaces: ', votedPlaces);
   return (
     <GoogleMap
       defaultCenter={location}
@@ -14,7 +34,7 @@ const Map = ({ location, places, selectedPlace, setSelectedPlace, votedPlaces })
       defaultZoom={12}
       zoom={14}
     >
-      {results.map(place => { // was results.map -> now places state is populated with results
+      {places.map(place => {
         return (
           <Marker
             key={place.place_id}
@@ -22,6 +42,10 @@ const Map = ({ location, places, selectedPlace, setSelectedPlace, votedPlaces })
               lat: place.geometry.location.lat,
               lng: place.geometry.location.lng
             }}
+            icon={
+             paintVotedPlace(place)
+              // process.env.PUBLIC_URL + 'black-logo.png'
+            } 
             onClick={() => {
               setSelectedPlace(place);
             }}
@@ -29,7 +53,7 @@ const Map = ({ location, places, selectedPlace, setSelectedPlace, votedPlaces })
         )
       })}
 
-      {selectedPlace && ( // kind of turnary operator, means if we selected one, do the following  
+      {selectedPlace && (
         <InfoWindow
           position={{
             lat: selectedPlace.geometry.location.lat,
@@ -44,8 +68,8 @@ const Map = ({ location, places, selectedPlace, setSelectedPlace, votedPlaces })
             <p>{selectedPlace.vicinity}</p>
             <img src={selectedPlace.icon} alt={<p>Image of{selectedPlace.name}</p>} />
             <Link to={`/place/${selectedPlace.place_id}`}>go to place</Link>
-            {/* FIXME: */}
-            {/* {votedPlaces.find(votedPlace => selectedPlace.place_id === votedPlace.google_id) ? <p>Score: {votedPlaces.filter(votedPlace => votedPlace.google_id === selectedPlace.place_id).average_score}</p> : null} */}
+
+            { getSelectedInfo(selectedPlace, votedPlaces)  }
           </div>
         </InfoWindow>
       )}
@@ -53,4 +77,6 @@ const Map = ({ location, places, selectedPlace, setSelectedPlace, votedPlaces })
   )
 }
 
+
 export const WrappedMap = withScriptjs(withGoogleMap(Map));
+
