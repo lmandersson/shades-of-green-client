@@ -1,31 +1,28 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Button from '@material-ui/core/Button';
 
 
 const getSelectedInfo = (selectedPlace, votedPlaces) => {
-  const match = votedPlaces.find(votedPlace => selectedPlace.place_id === votedPlace.google_id)  
-  return match 
-  ? <div>
-      <p>Score: {match.average_score}</p>
+  const match = votedPlaces.find(votedPlace => selectedPlace.place_id === votedPlace.google_id)
+  return match
+    ? <div>
+      <p>Score: {match.average_score.toFixed(1)}</p>
       <p>{match.num_of_votes} people rated this place</p>
-  </div> 
-  : null;
+    </div>
+    : null;
 }
 
-// FIXME: use this functionallity to defrentiate between voted and unvoted places:
 const paintVotedPlace = (markerPlace, votedPlaces) => {
   const match = votedPlaces && votedPlaces.find(votedPlace => markerPlace.place_id === votedPlace.google_id);
-  console.log(match, 'match');
-  
   return match
-  ? process.env.PUBLIC_URL + 'favicon-32.png'  // presenting as a colorful icon
-  : process.env.PUBLIC_URL + 'black-logo.png'; // presenting a black icon
+    ? process.env.PUBLIC_URL + 'favicon-32.png'  // presenting as a colorful icon
+    : process.env.PUBLIC_URL + 'black-logo.png'; // presenting a black icon
 }
 
 
 const Map = ({ location, places = [], selectedPlace, setSelectedPlace, votedPlaces }) => {
-  console.log('votedPlaces: ', votedPlaces);
   return (
     <GoogleMap
       defaultCenter={location}
@@ -43,7 +40,7 @@ const Map = ({ location, places = [], selectedPlace, setSelectedPlace, votedPlac
             }}
             icon={
               paintVotedPlace(place, votedPlaces)
-            } 
+            }
             onClick={() => {
               setSelectedPlace(place);
             }}
@@ -64,10 +61,14 @@ const Map = ({ location, places = [], selectedPlace, setSelectedPlace, votedPlac
           <div>
             <h2>{selectedPlace.name}</h2>
             <p>{selectedPlace.vicinity}</p>
-            <img src={selectedPlace.icon} alt={<p>Image of{selectedPlace.name}</p>} />
-            <Link to={`/place/${selectedPlace.place_id}`}>go to place</Link>
-
-            { getSelectedInfo(selectedPlace, votedPlaces)  }
+            <NavLink 
+            to={`/place/${selectedPlace.place_id}`} 
+            style={{ textDecoration: 'none' }}
+            activeStyle={{ color: 'red' }} // doesn't work, probably because of material-ui Button
+            >    
+              <Button variant="contained">Go to place</Button>
+            </NavLink>
+            {getSelectedInfo(selectedPlace, votedPlaces)}
           </div>
         </InfoWindow>
       )}

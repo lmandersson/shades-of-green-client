@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { connect } from 'react-redux'; 
+import { connect } from 'react-redux';
 
-import { updatePlaces } from '../actions'; 
+import '../App.css';
+import { Header } from '../components/Header';
+import { updatePlaces } from '../actions';
 import { WrappedMap } from '../components/Map';
 import { SearchBar } from './Search-bar-container';
-// import { Filters } from '../components/Filters';
+import { Filters } from '../components/Filters';
 import { getVotedPlaces } from '../actions'
 
 
@@ -18,7 +20,6 @@ const Dashboard = ({ places, sendPlacesToRedux, votedPlaces, sendVotedPlacesToRe
   const [location, setLocation] = useState(currentLocation);
 
   useEffect(() => {
-    console.log('Location state is loaded now');
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
         setLocation({
@@ -29,6 +30,7 @@ const Dashboard = ({ places, sendPlacesToRedux, votedPlaces, sendVotedPlacesToRe
         console.log(err);
       });
     }
+    // eslint-disable-next-line 
   }, [])
 
   // if a places has been searched in the search bar:
@@ -36,22 +38,30 @@ const Dashboard = ({ places, sendPlacesToRedux, votedPlaces, sendVotedPlacesToRe
   //if a place has been seleced, should open infoWindow
   const [selectedPlace, setSelectedPlace] = useState(null);
 
+  // filters states 
+  // const [scoreRangeFilter, setScoreRangeFilter] = useState(null);
+  const [typeFilter, setTypeFilter] = useState('restaurant');
+  // const [radiusFilter, setRadiusFilter] = useState(null);
 
   //✅ handling with the places list.
   const PLACES_API = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?`
   const API_KEY = `AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok`
-  const PLACE_TYPES = `restaurant,cafe,clothing_store,gym` // TODO: change not to see hotels 
-  const GET_PLACES_URL = `${PLACES_API}key=${API_KEY}&location=${location.lat},${location.lng}&radius=2000&type=${PLACE_TYPES}`;
+  const GET_PLACES_URL = `${PLACES_API}key=${API_KEY}&location=${location.lat},${location.lng}&radius=2000&keyword=${typeFilter}`;
+  // more options for place types: 👇🏻
+  // const PLACE_TYPES = `restaurant,cafe,clothing_store,gym` 
+  // const KEY_WORDS_ARR = ['restaurant', 'cafe', 'clothing', 'supermarket', 'shoes', 'hair'];
+  // const GET_PLACES_URL = `${PLACES_API}key=${API_KEY}&location=${location.lat},${location.lng}&radius=2000&keyword=${KEY_WORDS_ARR[0]}`;
+
 
   const fetchPlaces = () => {
-      const proxyurl = "https://cors-anywhere.herokuapp.com/";
-      fetch(proxyurl + GET_PLACES_URL, {
-        method: 'GET',
-      })
-        .then(res => res.json()) 
-        .then((placesArr) => {sendPlacesToRedux(placesArr)}) 
-        .catch(() => console.log("🧨 Can’t access response. Blocked by browser?"))
-    }
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    fetch(proxyurl + GET_PLACES_URL, {
+      method: 'GET',
+    })
+      .then(res => res.json())
+      .then((placesArr) => { sendPlacesToRedux(placesArr) })
+      .catch(() => console.log("🧨 Can’t access response. Blocked by browser?"))
+  }
 
   useEffect(fetchPlaces, [GET_PLACES_URL])
 
@@ -68,55 +78,47 @@ const Dashboard = ({ places, sendPlacesToRedux, votedPlaces, sendVotedPlacesToRe
       .catch(err => console.log(err));
   }
 
-  useEffect(fetchVotedPlaces, []) // 
+  useEffect(fetchVotedPlaces, [])
 
 
   return (
-    <div className="dashboard">
+    <div className="Dashboard">
+      <Header />
       <SearchBar
         setLocation={setLocation}
         searchedPlace={searchedPlace}
         setSearchedPlace={setSearchedPlace}
       />
-      {/* <Filters
-      setScoreRangeFilter={setScoreRangeFilter}
-      setTypeFilter={setTypeFilter}
-      setRadiusFilter={setRadiusFilter}
-      /> */}
+      <Filters
+        // setScoreRangeFilter={setScoreRangeFilter}
+        setTypeFilter={setTypeFilter}
+      // setRadiusFilter={setRadiusFilter}
+      />
       <WrappedMap
+        className="Map"
         location={location}
         googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok&v=3.exp&libraries=geometry,drawing,places`}
         loadingElement={<div style={{ height: `80%` }} />}
-        containerElement={<div style={{ height: `400px` }} />}
+        containerElement={<div style={{ height: `500px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
         setSelectedPlace={setSelectedPlace}
         selectedPlace={selectedPlace}
         places={places}
         votedPlaces={votedPlaces}
-        // getVotedPlaces={getVotedPlaces}
       />
     </div>
   )
 }
 
 
-// filters states 
-// const [scoreRangeFilter, setScoreRangeFilter] = useState(null);
-// const [typeFilter, setTypeFilter] = useState(null);
-// const [radiusFilter, setRadiusFilter] = useState(null);
-
-// TODO: Redux
 const mapStateToProps = (state) => ({
-    // describing what im drilling: (states)
-    places: state.places,
-    votedPlaces: state.votedPlaces,
+  places: state.places,
+  votedPlaces: state.votedPlaces,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  // Map your dispatch actions (setStates)
   sendPlacesToRedux: (places) => dispatch(updatePlaces(places)),
   sendVotedPlacesToRedux: (votedPlaces) => dispatch(getVotedPlaces(votedPlaces)),
 });
 
- // the actual drilling
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

@@ -1,0 +1,39 @@
+.PlaceDetailsContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* vertically */
+  justify-content: baseline;
+  align-items: center
+}
+
+.BackButton {
+  height: 5vh;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 0%;
+  align-self: baseline;
+}
+
+.PlaceName {
+  margin: 0%;
+  padding: 0%;
+  font-weight: 500;
+  max-width: 90vw;
+  align-self: center;
+}
+
+.PlaceImage {
+  max-height: 30vh;
+  max-width: 90vw;
+  margin: 10px;
+}
+
+.MoreDetails {
+  align-self: baseline;
+  margin: 20px;
+}
+
+.RatingDiv {
+  max-height: 20vh;
+}

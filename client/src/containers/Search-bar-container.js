@@ -1,9 +1,10 @@
-import React /*, { useState }*/ from 'react';
+import React from 'react';
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
-// import { selectPlace } from '../actions'; //TODO: redux
+import '../App.css';
+
 
 export const SearchBar = ({ setLocation, searchedPlace, setSearchedPlace }) => {
 
@@ -15,26 +16,31 @@ export const SearchBar = ({ setLocation, searchedPlace, setSearchedPlace }) => {
   };
 
   return (
-    <div style={{ height: `10vh`, width: `80vw` }}>
-
+    <div className="SearchBar">
       <PlacesAutocomplete
         value={searchedPlace}
         onChange={setSearchedPlace}
         onSelect={handleSelect} // when the user selects one option
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-          <div>
-            <input {...getInputProps({ placeholder: "Type city..." })} />
-            <div>
+          <div className="SearchAutoCompleteContainer">
+            <input 
+              className="LocationSearchInput"
+              {...getInputProps({ placeholder: "Type city..." })}
+            />
+            <div className="SearchSuggestions">
               {loading ? <div>Loading...</div> : null}
               {suggestions.map(suggestion => {
 
                 const style = {
-                  backgroundColor: suggestion.active ? '#41b6e6' : '#ffffff'
+                  backgroundColor: suggestion.active ? '#225A23' : '#ffffff'
                 };
 
                 return (
-                  <div {...getSuggestionItemProps(suggestion, { style })}>
+                  <div 
+                    className="SearchAutoComplete"
+                    {...getSuggestionItemProps(suggestion, { style })}
+                  >
                     {suggestion.description}
                   </div>)
               })}
