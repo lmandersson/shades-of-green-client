@@ -9,10 +9,13 @@
 
 .BackButton {
   height: 5vh;
-  font-size: 30px;
+  font-size: 35px;
   margin-left: 10px;
   margin-top: 0%;
-  align-self: baseline;
+  background: none;
+  border: none;
+  outline: none;
+  /* border-radius: 10px; */
 }
 
 .PlaceName {
@@ -36,4 +39,17 @@
 
 .RatingDiv {
   max-height: 20vh;
+}
+
+
+.VoteButton {
+  background: none;
+  margin: 5px;
+  /* border-radius: 10px; */
+  border: none;
+  color: transparent;
+}
+
+.VoteButton:active {
+  outline: none
 }

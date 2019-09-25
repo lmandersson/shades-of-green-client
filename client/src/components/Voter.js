@@ -1,10 +1,11 @@
 import React from 'react'
-// import Button from '@material-ui/core/Button';
+
 import firstEmoji from '../emojies/1-crying-carrot.png';
 import secondEmoji from '../emojies/2-sad-carrot.png';
 import ThirdEmoji from '../emojies/3-middle-carrot.png';
 import ForthEmoji from '../emojies/4-happy-carrot.png';
 import FifthEmoji from '../emojies/5-inlove-carrot.png';
+import '../containers/PlaceDetails.css'
 
 export const StarVoting = ({ rating, setVote }) => {
 
@@ -22,6 +23,7 @@ export const StarVoting = ({ rating, setVote }) => {
       <form className="voting-form">
         {[1, 2, 3, 4, 5].map(vote => (
           <button
+            className="VoteButton"
             key={vote}
             onClick={handleVote}
             value={vote}
