@@ -2,7 +2,7 @@
 
 const PHOTOS_API = `https://maps.googleapis.com/maps/api/place/photo/json?`
 const MAX_WIDTH = 400;
-const API_KEY = `AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok`
+const API_KEY = process.env.API_KEY
 const GET_PHOTOS_URL = `${PHOTOS_API}maxwidth=${MAX_WIDTH}&photoreference=${place.photos[0].photo_reference}&key=${API_KEY}`;
 
 

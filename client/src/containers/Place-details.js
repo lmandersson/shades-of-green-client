@@ -37,7 +37,7 @@ const Place = ({ match, places = [], votedPlaces = [], sendVotedPlacesToRedux })
 
   // geting the photo URL, no need for third fetch for the api:
   const PHOTOS_API = `https://maps.googleapis.com/maps/api/place/photo?`
-  const API_KEY = `AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok`
+  const API_KEY = process.env.API_KEY
   const MAX_WIDTH = 400;
   const GET_PHOTOS_URL = place && `${PHOTOS_API}maxwidth=${MAX_WIDTH}&photoreference=${place.photos[0].photo_reference}&key=${API_KEY}`;
 

@@ -4,7 +4,7 @@
 
 // TODO: fix and put in the env file 
 const PLACES_API = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?`
-const API_KEY = `AIzaSyAE71vQRELEoUHanJup0hhNX1Cup3_bXok`
+const API_KEY = process.env.API_KEY
 
 const PLACE_TYPES = `art_gallery,bakery,beauty_salon,cafe,clothing_store,hair_care,gym,restaurant`
 const GET_PLACES_URL = `${PLACES_API}key=${API_KEY}&location=${location.lat},${location.lng}&radius=2000&type=${PLACE_TYPES}`;

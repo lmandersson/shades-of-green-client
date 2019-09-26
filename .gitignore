@@ -62,3 +62,4 @@ typings/
 
 # This contains secrets, don't store in source control
 .env 
+node_modules
